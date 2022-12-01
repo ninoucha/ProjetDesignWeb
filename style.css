@@ -1,0 +1,492 @@
+/*Mise en forme du body*/
+body {
+   
+  background-color: #c1c9d0;/* Mettre une couleur de fond*/
+  margin: 0;
+  padding: 0;
+ 
+}
+/* Pour tout*/
+*{
+font-family:Neutraface Book,-apple-system,BlinkMacSystemFont,Segoe;
+}
+/* mise en forme des contenus des modules*/
+
+h1{
+  color: rgb(8, 8, 8);
+  font-size: 30px;
+  font-style: italic;/*mettre le style d'ecriture en italic*/
+  font: normal 20px Neutraface Book,-apple-system,BlinkMacSystemFont,Segoe; 
+  text-align: center;
+}
+h2,h3,dt{
+  font-size: 20px;
+  font: bold  Neutraface Book,-apple-system,BlinkMacSystemFont,Segoe; 
+  
+  margin-left: 10px;
+}
+dt { color: #3a3a3a;
+      font-weight: bold;
+}
+/* Mise en forme du titre d'un master*/
+.bloc {
+  padding: 4px;
+  font-size: 60px;
+  position: relative;/*Dans ce cas de position, les propriÃ©tÃ©s top ou bottom indiquent le dÃ©calage vertical Ã  appliquer et left ou right indiquent le dÃ©calage horizontal*/
+  overflow: hidden;/*cacher tout ce qui dÃ©passe de l'Ã©lÃ©ment et ne met pas de barre de dÃ©filement*/
+ 
+}
+
+
+/* Menu */
+ ul.d { /* Creer barre de navigation */
+  list-style-type: none;
+  margin-top: 300px;
+  margin-right: 40px;
+  margin-left: 0px;
+  padding: 10px 20px;
+  overflow: hidden;/*cacher tout ce qui dÃ©passe de l'Ã©lÃ©ment et ne met pas de barre de dÃ©filement*/
+  background-color: #0b253c;
+  position: relative;
+  color: white;
+  border: none;
+  border-radius: 5px;/*bourdure courber de 5px*/
+  box-shadow: 10px 5px 5px  #15141aba;
+  float: left;/*decalage a  gauche*/
+  height: 600px;
+  width: 220px;
+            
+          }
+          /* Mise en forme des liens de la barre de navigation*/
+.d a{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 14px;
+  text-decoration: none; /*enlever le soulignement par defaut des liens*/
+        }
+         
+          
+  /*les bouttons, quand on click sur le boutton programme*/
+  li a, .dropbtn ,.dropbtn1,.dropbtn2 {
+    display: inline-block;
+    color:  white;
+    text-align: center;/*centrer le contenu*/
+    padding: 14px 16px;
+      }
+      
+      /*  ajouter une couleur pour les btn  */
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+            } 
+          
+         /* le contenu des bouttons  qui apparaissent en cliquant sur le boutton programme*/         
+  .dropdown-content {    
+    display: none;
+    position: absolute;/* positionnÃ© par rapport Ã  son parent le plus proche positionnÃ©*/
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.2);/*ajouter des ombres*/
+    z-index: 1;
+  }
+ /* Les liens des bouttons qui apparaissent en cliquant sur le bouton programme*/         
+ .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;/*Positionner en block*/
+  text-align: left;
+  background-color: black;
+  } 
+          
+          
+.dropdown:hover .dropdown-content {
+  display: block;
+          }
+          
+         
+/* quand la souris touche une ligne du tableau*/
+tr:hover {
+  background-color: rgb(238, 232, 232);
+  color: black;       
+          }
+
+  /* mise en forme des bouttons qui se trouve dans le tableau designant les semestres*/
+.btn{
+  background-color: rgb(182, 213, 248);
+  color: black;
+  font-size: 10px;/*taille de la police*/
+  height: 20px;
+  width: 60px;
+  font-weight: bold;
+  border: 1px solid rgb(182, 213, 248);
+        }
+ /* mise en forme des bouttons qui se trouve dans le tableau designant les semestres en survolant la souris*/       
+ .btn:hover{
+  background-color: rgb(182, 213, 248);
+  color: black;
+  font-size: 10px;
+  height: 30px;
+  width: 70px;
+  font-weight: bold;/*Ecriture en gras*/
+  border: 1px solid black;
+        }
+ /*Mise en forme d'une image dans le fichier IA*/       
+.imgDomaineIA{
+  height: 400px;
+  margin-left: 100;
+ /*Decalage a droite*/
+        }
+        /**********************************Slide****************************************/
+        .slider {
+
+          width: 800px;
+          margin: 30px auto;
+          position: relative;
+       }
+        .slider-viewport {
+          width: 800px;
+          height: 400px;
+          overflow: hidden;
+       }
+        .slider-content {
+          display: grid;
+          grid-auto-flow: column;
+          transition: 1s all;
+       }
+        .slider-content table {
+          width: 800px;
+          height: 400px;
+       }
+        .slider-nav {
+          
+          width: 100%;
+          bottom: -30px;
+          margin-top: 10px;
+          text-align: center;
+       }
+        .slider-nav a {
+          box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.3);
+          display: inline-block;
+          background-color:#0b253c;
+          width: 25px;
+          height: 25px;
+          margin: 0 3px;
+          color: white;
+
+       }
+        .slider-nav a:hover {
+          background-color: rgba(0,0,0,.25);
+          box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.8);
+       }
+        #S2:target .slider-content {
+          transform: translateX(-800px);
+       }
+        #S3:target .slider-content {
+          transform: translateX(-1600px);
+       }
+     
+      
+/****click sur boutton afficher*****/
+          
+#m1,#m2,#m3,#m4,#m5,#m6,#m7,#m8,#m9,#m10,#m11,#m12,#m13,#m14,#m15,#m16,
+#m17,#m18,#m19,#m20,#m21,#m22,#m23,#m24{
+position:absolute;
+top:50px;
+left:100px;
+display:none;
+width:550px;
+height:300px;
+overflow:auto;
+border-style:solid;
+border-color:#909090; 
+background-color:#f0f0f0;
+background-clip: border-box;
+border: 1px solid gray;
+ box-shadow: 10px 10px rgba(0,0,0,.25);
+ font-size: 16px;
+}
+/*Pour tous les paragraphes*/
+p{  
+color: rgb(8, 8, 8);
+font-size: 16px;
+font-family: Neutraface Book,-apple-system,BlinkMacSystemFont,Segoe;
+margin-left: 10px;
+}
+
+/*La page au millieu qui contient toutes les informations sur les masters*/
+.contenuMaster {
+  float: center;
+  border-radius: 10px;
+ background-color:  white;
+ margin-right: 280px;
+ margin-left: 280px;
+ position: relative;
+ margin-top: 200px;
+ box-shadow: 10px 5px 5px  #15141aba;
+ width: 850px;
+}
+/* Les liens des sites qui se trouve au cote gauche de chaque page*/
+.links {    
+            color: white;
+            float: right;
+            margin-top: 800px;
+            margin-right: 5px;
+            margin-left: 0px;
+            padding: 10px 20px;
+            width: 200px;
+            border: none;
+            border-radius: 7px;
+            height:200px;
+            background-color: #0b253c;
+            box-shadow: 10px 5px 5px  #15141aba;
+}
+.links ul { 
+             float: right;
+             font-size: 10px;           
+}
+
+.links img { 
+             margin-right: 0;
+             float: left;
+             height: 100px;
+             width: 100px;
+             margin-top:-100px;
+}
+
+.links2 {    
+  color: white;
+  float: right;
+  margin-top: 1030px;
+  margin-right: -260px;
+  margin-left: 100px;
+  padding: 10px 20px;
+  width: 200px;
+  border: none;
+  border-radius: 7px;
+  height:200px;
+  background-color: #0b253c;
+  box-shadow: 10px 5px 5px  #15141aba;
+}
+.links2 ul {
+  margin-left: 0;
+  float: right;
+  font-size: 10px;
+}
+.links2 ul li{
+  text-decoration:none;
+}
+.links2 img { 
+  margin-right: 0;
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin-top:-120px;
+}
+
+/* une classe mise dans les balises p */
+.alinea { 
+  text-indent: 20px; 
+}
+/*Mise en forme de tableau*/
+table { 
+   border: 2px solid black;
+  }
+/* Mise en forme  du head du tableau*/
+table  th{
+  border: 0.1em solid; 
+  background-color: #03325c;
+  color: white;
+  border-color: black;
+
+}
+/* ajouter pour la couleur #eee et #fff  pour chaque tr paire/impaire  */
+table tr:nth-child(even) {            
+    background-color: #eee;     }
+ 
+table tr:nth-child(odd) {            
+background-color:#fff;      }
+
+/******************************************mise en forme du footer********************************/
+.footer-bas{
+  background: #0b253c;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 50px;
+}
+/*mise en forme des parties du footer*/
+.footer-bas .footer-gauche,
+.footer-bas .footer-centre,
+.footer-bas .footer-droit{
+  display: inline-block;/* pour une ecriture en block l'un a cote de l'autre*/
+  vertical-align: top;
+}
+
+/* footer gauche */
+
+.footer-bas .footer-gauche{
+  width: 40%;
+}
+
+/* MIse en forme du logo MasterStudy dans le footer */
+
+.footer-bas h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+/* MIse en forme du logo seulement la partie Study dans le footer */
+.footer-bas h3 span{
+  color:  #33a7b5;
+}
+
+/* les lien qui sont dans le footer tel que le mail */
+.footer-bas .footer-liens{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+/* les lien qui sont dans le footer a droite (barre navigation qui se trouve dans le footer) */
+.footer-bas .footer-liens a{
+  display:inline-block;
+  line-height: 1.8;
+font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+/*  Mise en forme du texte en bas de la navigation dans le footer*/
+.footer-bas .footer-name{
+  color:  #b7b7b7;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Mise en forme de la deuxieme colonne qui se trouve dans le footer */
+.footer-bas .footer-centre{
+  width: 35%;
+}
+
+.footer-bas .footer-centre i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-bas .footer-centre i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+/*mise en forme de l'email de la deuxieme colonne*/
+.footer-bas .footer-centre p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-bas .footer-centre  span.contact{
+  color: white;
+  line-height:2;
+  font: bold 20px 'Open Sans', cursive ;
+}
+
+.footer-bas .footer-centre p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-bas .footer-centre p a{
+  color:  #33a7b5;
+  text-decoration: none;;
+}
+
+.footer-bas .footer-liens a:before {
+content: "|";
+font-weight:300;
+font-size: 20px;
+left: 0;
+color: #fff;
+display: inline-block;
+padding-right: 5px;
+}
+
+.footer-bas .footer-liens .link-1:before {
+content: none;
+}
+
+/* Footer droit */
+
+.footer-bas .footer-droit{
+  width: 20%;
+}
+
+.footer-bas .footer-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-bas .footer-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-bas.footer-icons{
+  margin-top: 25px;
+}
+
+.footer-bas .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/*Si vous ne souhaitez pas que le pied de page soit rÃ©actif, supprimez ces requÃªtes multimÃ©dias */
+
+@media (max-width: 880px) {
+
+  .footer-bas{
+      font: bold 14px sans-serif;
+  }
+
+  .footer-bas .footer-gauche,
+  .footer-bas .footer-centre,
+  .footer-bas .footer-droit{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+
+  .footer-bas .footer-centre i{
+      margin-left: 0;
+  }
+
+}
