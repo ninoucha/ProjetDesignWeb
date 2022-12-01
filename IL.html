@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <!------ les tag pour l'ajout des icones ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" >
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ag6nJs4N25678e4LXdPi0bAwoMK299043bnxAIp46X5t8kT4D85O2FPG4Em8cSUyNL6fxur53EqN-rOTIX9iS2JZjivbGFdezcCZHnX7rLh_Xyr0CcUYOeOBbNt9448s4pPI9jqdwH9gjgW1W0I6j_4Qgwx0XHNlwknQ8BdwaQLdl6zXywXU70zeoYcf-bCw9o48jU7dq3r0hckdMuGtIpqMK1tKzBOxI8vyFOX6cRV2uV1AXC712SvvV1_hJ3TnRVhATMCAvezCCzWDljZWN__Y6jBfFV1-7xNDV8F4w_d8gPXwwqtZZIRu9HekpYx0QZCHDUzZI6P4TyJEEgRsz7Ij07LDZQ2zRjfnbgn58yeASs26S8MsGIsyXCDEo1YJYKG83t70MJX4n6Wsmej-WzXkZOcrxyvVd8GphPfpguSGMqBDDQCk-vFdItHnOhEtqlSJJ0wFsOFGUnWgZpowjMlqukPpja07fG_9R_1u-AA0nQJtkdFkgDFegLOnxcDLtA0U_5bLMKTY5DiNiEWBZYHi3F45DOD_EM-Mrd7xrF-hb3iokFVI5boyyvuyXdRcS4s643Vz1u6Dt2PvtPlisHI5WBW_ooJIAuMhy-xstUjqfum1NT7QQDVy9mDogfdHycZlgHxGspgeYjoKliee8oiFbByXVwXACJDVdMkeI1tE3nrsdtPL95KA7hHVrwE58b6aR8oGuPiGuTMV3B0aaA3WMAhWHxJzMc2Wo3U1IiC9Pe_AqU5wbOln0UW8_RFIPSkGWV9-U78M6vD3BFgwNbuUrcFxL2j8JSySNqbLwRWnW_UH2z4jgbAEauaQVTjTSkoKRPg6N64Bg1Tiu8yWCv1gNMYZD4h0bboRi5iDVwzag7HiQji8XXClM75J0-gmr1uaochHnQ3hhfl5JFrirn3mRTo4mVMEx4cLKWW_pZbicgEW-HVOCHtok8JWqYxy0czl7sVhORwWNtyT7RAxr-LDbykYhVi4yqH-_Ahld8oDKt74pfBGyOro6FsGX_Kb0zKbjTCmhK5JvnxNyF0uGeH95xjXnvBkxyKwzQgjqpIysGH0q2JUXaz9VonqO-t9pQer6exOIQY8yQN1nkv9p4Ud_MLLUuQHSjMEivwRtyjiFOLJabe5d7f3ONdNzcm_aXKOUCA6YfLPgK7Jrx2TUCeNJlvI-N8bUiBV2Dw2kRt4T56zh882XxOGsdTinKqXdE0RZixQgiXswQD4iPwXL3U_TRpQo4hG_9ZHZWoW7D9PnZIaNW9y_h1Ap3qQzN0uA-ZqrlXrR9SBMWcCOQP_9mA5NKq2QFGsEpHgzyFPIfw" charset="UTF-8"></script><script src="https://kit.fontawesome.com/50149a0ab1.js" ></script>
+    <title>Ingenieurie en logiciels</title>
+</head>
+<body>
+
+  
+ <!-- pour afficher un text dans le tableau on click sur un boutton-->
+ <script >
+  function toggle_text(id) {
+    var span = document.getElementById(id);
+    if(span.style.display == "none") {
+      span.style.display = "inline";
+    } else {
+      span.style.display = "none";
+    }
+  }
+  </script> 
+
+   <!--------------------Titre et une image en haut de page---------------------------->
+    <br> <div>
+  <img src="images/il1.jpg" alt="" style="width: 100%;height: 300px; opacity: 0.6;position: absolute;margin-top: -20px;">
+<div style="z-index: 1;position: absolute; margin: 0 auto; top: 0%; left: 0;right: 0;">
+    <h1 class="bloc">ingenierie des logiciels Informatiques</h1> 
+</div>
+</div>
+ <!----------------------navigateur -------------------------->
+   <nav class="navIL"  >
+        <ul class="d">
+                <li class="titrenav">Page d'acceuil  :</li><br>
+                  <li><a  href="index.html">Home</a></li><br>
+                  <li class="titrenav">PrÃ©sentation du domaine :</li><br>
+                
+                <li><a  href="#Histoire">Histoire</a></li>
+                  <li><a  href="#definition">DÃ©finition</a></li>
+                   <li><a href="#Detail">Plus de dÃ©tails</a></li><br>
+                    <li class="titrenav">PrÃ©sentation de la formation :</li><br>
+                    <li class="dropdown">
+                    <a href="#programme" class="dropbtn">Programme</a>
+                    <div class="dropdown-content">
+    
+                        <a  href="#S1">S1</a>
+                        <a  href="#S2">S2</a>
+                        <a  href="#S3">S3</a>
+                        <a href="#S4">S4</a>
+    
+                    </div>
+                  </li>
+                 
+                  <li><a  href="#Contexte">Contexte et objectifs</a></li>
+                  <li><a href="#competences">CompÃ©tences visÃ©s</a></li>
+                </ul>
+            </nav>
+             <!---------------partie pour des liens intÃ©ressants Ã  consulter ----------------->
+            <div class="links">
+              <h3>liens</h3>
+              
+              <ul>
+                <li> <a href="https://fr.wikipedia.org/wiki/R%C3%A9seau_de_t%C3%A9l%C3%A9communications">Wikipedia</a> </li>
+                <li><a href="https://www.techno-science.net/definition/11697.html">Bibliographie</a></li>
+              </ul>
+              <img src="images/il1.webp" alt="">
+          </div>
+          <div class="links2">
+            <h3>UniversitÃ¨s</h3>
+            
+            <ul>
+              <li> <a href="https://www.futura-sciences.com/tech/definitions/informatique-intelligence-artificielle-555/">UniversitÃ¨ Dauphine</a> </li>
+              <li><a href="https://formations.univ-lorraine.fr/fr/master/2326-master-ingenierie-des-logiciels.html">UniversitÃ¨ LORAINE</a></li>
+              <li><a href="https://www.usthb.dz/fr/page/139">UniversitÃ¨ USTHB</a></li>
+            </ul>
+            <img src="images/il2.jpg" alt="" >
+        </div>
+         <!----------------------le contenu du master------------------------->
+          <section class="contenuMaster">
+        <br>  <!----------------------Histoire de IL-------------------------->
+           <h3 id="Histoire">Historique</h3><blockquote>
+          <p class="alinea"> Le terme Â« software engineering Â» a Ã©tÃ© mentionnÃ© publiquement pour la premiÃ¨re
+            fois en 1968  pour une confÃ©rence organisÃ©e par l'OTAN sur le sujet. Il a Ã©tÃ© repris l'annÃ©e suivante Ã  une
+             confÃ©rence concernant la crise du logiciel. La crise du logiciel est une baisse significative de la qualitÃ© des logiciels dont la venue coÃ¯ncide avec le dÃ©but
+              de l'utilisation des circuits intÃ©grÃ©s dans les ordinateurs : l'augmentation de la puissance de calcul des ordinateurs a permis de rÃ©aliser des logiciels 
+              beaucoup plus complexes qu'auparavant.<br> En 1972, l'IEEE lance un premier pÃ©riodique, Â« Transactions on Software Engineering Â»,
+            consacrant ainsi cette discipline Ã©mergente de l'ingÃ©nierie
+            Les premiÃ¨res tentatives de crÃ©ation de logiciels de grande ampleur ont vite montrÃ© 
+            les limites d'un travail informel d'ingÃ©nieurs logiciel : les produits rÃ©alisÃ©s ne sont pas terminÃ©s dans les temps,
+             coÃ»tent plus cher que prÃ©vu, ne sont pas fiables, sont peu performants et coÃ»tent cher en entretien.<br> La baisse du coÃ»t
+              du matÃ©riel informatique s'accompagnait d'une augmentation du coÃ»t du logiciel. Des Ã©tudes se sont penchÃ©es sur la recherche 
+              de mÃ©thodes de travail adaptÃ©es Ã  la complexitÃ© inhÃ©rente 
+            aux logiciels contemporains et ont donnÃ© naissance au gÃ©nie logiciel
+            Aujourd'hui (en 2004), l'utilisation des mÃ©thodes de gÃ©nie logiciel reste quelque chose de relativement peu rÃ©pandu dans l'industrie du logiciel.<br> Le programmeur travaille souvent comme un artisan, guidÃ© par son talent, son expÃ©rience et ses connaissances thÃ©oriques 
+            et la crise du logiciel s'apparente Ã  une maladie chronique de l'industrie du logiciel</p> </blockquote>
+            <img src="images/genie.jpg" alt="" style="margin-left: 200px; width: 400px;">
+    
+          <!---------------------DÃ©finition de IL --------------------------->
+       <h3 id="definition">DÃ©finition</h3> <blockquote>
+        <p class="alinea"> Lâ€™informatique est secteur complexe, extrÃªmement spÃ©cialisÃ©, et en perpÃ©tuelle Ã©volution.
+
+            Dans ce contexte, le Master GÃ©nie Logiciel  forme des experts du dÃ©veloppement de logiciels, adaptÃ©s aux besoins dâ€™une organisation ou dâ€™une entreprise
+            De la dÃ©finition du cahier des charges avec les futurs usagers, aux dÃ©finitions techniques et Ã  la programmation, le Master GÃ©nie Logiciel vous forme aux diffÃ©rentes Ã©tapes du projet.<br>
+            Avec ce diplÃ´me de trÃ¨s haut niveau, vous serez Ã  mÃªme de mobiliser toutes les ressources nÃ©cessaires Ã  lâ€™Ã©laboration de votre projet, quâ€™elles soient humaines, technologiques ou matÃ©rielles. Le Master GÃ©nie Logiciel vous permettra dâ€™Ã©voluer dans diffÃ©rents secteurs tels que lâ€™industrie, les administrations, le transport, la logistique, etc. Mais vous pourrez Ã©galement vous spÃ©cialiser. </p></blockquote>
+        <img src="https://engineerscanada.ca/sites/default/files/publications/guideline-white-paper-software-engineering/model-guide-whte-paper-software-engineering-diagram-fr.png" alt="image descriptive du genie logiciel" style="margin-left: 150px;height: 400px; width: 500px;" >
+        
+       
+          <h3 id="Detail">Domaines de connaissance du gÃ©nie logiciel</h3>
+          <p class="alinea">Le domaine de connaissances du gÃ©nie logiciel couvre en particulier le cycle de vie d'un logiciel, les activitÃ©s clÃ©s du cycle de vie et l'ordre dans lequel ces activitÃ©s sont effectuÃ©es.<br> Il couvre Ã©galement les diffÃ©rentes personnes impliquÃ©es: technico commercial, les ingÃ©nieurs, les acheteurs, les utilisateurs, et le directeur des systÃ¨mes d'information.<br>
+
+          Selon le SWEBOK les activitÃ©s clÃ©s du cycle de vie d'un logiciel sont : l'analyse fonctionnelle, l'architecture, la programmation, les tests, la validation, la maintenance et la gestion de projet.
+          </p>
+          <dl>
+<dt class="alinea">Analyse des besoins</dt>
+<dd>Consiste Ã  rÃ©colter des informations dÃ©taillÃ©es concernant l'Ã©ventail de fonctions que devra offrir le logiciel, ainsi que les rÃ©sultats qu'il devra donner.</dd>
+<dt class="alinea">Conception</dt>
+<dd>Consiste Ã  dÃ©terminer et schÃ©matiser les grandes lignes des mÃ©canismes qui devront Ãªtre programmÃ©s en vue d'obtenir chacune des fonctions que devra offrir le logiciel.
+Des plans conceptuels du logiciel selon les formalismes de modÃ©lisation (UML par exemple) seront alors rÃ©alisÃ©.</dd>
+<dt class="alinea">Construction</dt>
+<dd>Consiste Ã  la rÃ©daction du code source, des instructions de programme qui offriront les fonctions attendues, et qui sont le corps du logiciel. La programmation est alors effectuÃ©e en suivant les plans initialement Ã©tablis lors de la conception.</dd>
+<dt class="alinea">Tests</dt>
+<dd>Une suite de vÃ©rifications faites par les ingÃ©nieurs qui servent Ã  dÃ©celer un maximum de bugs, des dÃ©fauts de programmation qui provoquent des pannes ou des rÃ©sultats incorrects. La validation est un examen rÃ©alisÃ© par le client durant lequel il vÃ©rifie que les fonctions offertes par le logiciel correspondent Ã  ses attentes et Ã  ses besoins.
+</dd>
+<dt class="alinea">Maintenance :</dt>
+<dd>Des opÃ©rations d'analyse, de programmation et de test rÃ©alisÃ©s aprÃ¨s coup, une fois que le logiciel a Ã©tÃ© mis Ã  disposition des utilisateurs et durant lesquelles le logiciel subit des transformations, des corrections ou des amÃ©liorations.</dd></dl>
+       
+        <h3>MÃ©thodes et pratiques de dÃ©veloppement</h3>
+        <blockquote>
+          <p class="alinea">Le domaine de connaissance des mÃ©thodes concerne l'ordre dans lequel sont effectuÃ©s les diffÃ©rents travaux de dÃ©veloppement d'un logiciel - en cascade, en V, itÃ©ratif, en sprints ou parallÃ¨lement:</p>
+          <dl>
+          <dt>Cascade</dt>
+          <dd>La mÃ©thode classique de gÃ©nie consiste Ã  effectuer successivement, en cascade, les travaux d'analyse fonctionnelle, puis de conception, de programmation et de test.</dd>
+          <dt>Cycle en V</dt>
+          <dd>Le cycle en V est une autre mÃ©thode classique, partagÃ©e avec l'ingÃ©nierie de systÃ¨mes. Elle consiste Ã  concevoir un systÃ¨me fait de parties plus simples, qui Ã  leur tour seront conÃ§ues puis rÃ©alisÃ©es et vÃ©rifiÃ©es, avant que le systÃ¨me ne soit assemblÃ© et vÃ©rifiÃ© dans son ensemble.</dd>
+          <dt>ItÃ©ratif</dt>
+          <dd>Une autre mÃ©thode consiste Ã  effectuer les travaux d'analyse, de programmation, de test et de validation tout d'abord sur un jeu restreint de fonctions du logiciel, puis une nouvelle itÃ©ration servira Ã  rÃ©pÃ©ter ces opÃ©rations sur un jeu de fonctions plus raffinÃ©, et ainsi de suite, selon un cycle en spirale.</dd>
+          <dt>Agile</dt>
+          <dd>Agile est un qualificatif de divers procÃ©dÃ©s de dÃ©veloppement en rupture avec les procÃ©dÃ©s d'ingÃ©nierie classiques hÃ©ritÃ©s du gÃ©nie. Ces procÃ©dÃ©s mettent l'accent sur les changements constants de cahier des charges et de code source des logiciels, une collaboration Ã©troite et une forte implication de l'utilisateur final, et un cycle de dÃ©veloppement en spirale avec de nombreuses et courtes itÃ©rations. Scrum, Extreme programming et Rational Unified Process sont des mÃ©thodes agile.</dd></dl><br>
+          <img src="images/ilnew3.png" title="cycle en spirale" style="width: 600px; margin-left:90px;">
+        </blockquote>
+          <h3 >Outils de production utilisÃ© par le gÃ©nie logiciel</h3>
+          <blockquote>
+            <p class="alinea">D'autres domaines sont connexes au gÃ©nie logiciel dans la mesure oÃ¹ ils partagent des outils communs : description formelle du code, grammaires des langages manipulÃ©s. Ces domaines sont par exemple :</p>
+            <ul>
+              <li>La compilation.</li>
+              <li>La traduction de code d'un langage de programmation vers un autre.</li>
+              <li>Les bibliothÃ¨ques de composants.</li>
+              <li>Un outil de Gestion de configuration pour contrÃ´ler les Ã©volutions du code produit.</li>
+              <li>Des outils de gÃ©nÃ©ration de mÃ©triques pour caractÃ©riser la conformitÃ© du code produit</li>
+            </ul>
+          </blockquote>
+       
+          <h3 >RÃ´le de l'ingÃ©nieur logiciel </h3>
+          <blockquote>
+            <p class="alinea">Le gÃ©nie logiciel applique les principes et techniques d'ingÃ©nierie Ã  la conception de systÃ¨mes logiciels, intÃ©grÃ©s et Ã  grande Ã©chelle. L'ingÃ©nieur logiciel doit  maÃ®triser la thÃ©orie et les mÃ©thodes de l'informatique. Si les ingÃ©nieurs logiciels possÃ¨dent un vaste bagage en matÃ©riel informatique, ils se spÃ©cialisent dans la conception, la maintenance et le dÃ©veloppement des systÃ¨mes et des produits logiciels. Ils sont gÃ©nÃ©ralement responsables de l'Ã©laboration et de la gestion des projets Ã  grande Ã©chelle oÃ¹ la sÃ©curitÃ© du public, ainsi que la maintenance et l'Ã©volution des systÃ¨mes de logiciel, sont d'une importance primordiale.</p>
+            <p class="alinea">En plus des tÃ¢ches administratives inhÃ©rentes au suivi de tout projet dâ€™ingÃ©nierie dans les domaines qui incombent Ã  son champ dâ€™exercice, lâ€™ingÃ©nieur logiciel doit Ãªtre en mesure dâ€™effectuer les tÃ¢ches professionnelles spÃ©cifiques suivantes :</p>
+            <ul>
+              <li>Analyser et pouvoir spÃ©cifier les besoins et les exigences du dÃ©veloppement dâ€™un produit logiciel ou dâ€™un systÃ¨me logiciel.</li>
+              <li>Concevoir des logiciels tout en assurant dâ€™abord lâ€™intÃ©rÃªt du public, puis celui de ses clients, Ã  partir de spÃ©cifications conformes aux besoins.</li>
+              <li>DÃ©velopper des produits logiciels ou des systÃ¨mes basÃ©s sur des logiciels en suivant les normes professionnelles adÃ©quates.</li>
+              <li>Sâ€™assurer par des tests adÃ©quats que les produits logiciels sont conformes aux spÃ©cifications Ã©noncÃ©es.</li>
+              <li>Si nÃ©cessaire, voir Ã  lâ€™entretien et Ã  la certification logicielle.</li>
+            </ul> <img src="images/ilnew1.jpg" alt="" style="width: 600px; margin-left:90px;">
+          </blockquote>
+        <h3>Pourquoi faire une formation en gÃ©nie logiciel ?</h3>
+        <p>Le gÃ©nie logiciel est un domaine qui a connu une croissance consistante au fil des annÃ©es. Cela peut Ãªtre attribuÃ© Ã  la maniÃ¨re dont nous vivons maintenant.<br> En effet, une grande partie de la technologie peut interagir avec les humains. AprÃ¨s tout, mÃªme les aspirateurs se dÃ©brouillent tous seuls maintenant, selon nos volontÃ©s !</p>
+        <!----------Contexte et Objectifs de IL ----------->
+        <h3 id="Contexte">Contexte et Objectifs de la formation</h3><blockquote>
+         <p class="alinea">
+            Lâ€™Ã©volution sans cesse croissante de lâ€™environnement socio-Ã©conomique et universitaire induit des besoins permanents et en constante Ã©volution en terme dâ€™acquisition de connaissances et dâ€™utilisation de lâ€™informatique (sous tousses aspects), dâ€™une maniÃ¨re gÃ©nÃ©rale, et particuliÃ¨rement lâ€™exigencede dÃ©veloppement de logiciels de qualitÃ© de plus en plus spÃ©cifiques Ã  chaque domaine.<br> Cette formation dâ€™ingÃ©nierie des logiciels a pour but de rÃ©pondre Ã  ces exigences et Ã  ces attentes Ã  travers des enseignements particuliÃ¨rement axÃ©s sur des aspects pratiques combinÃ©s Ã  des Ã©lÃ©ments de thÃ©orie. Les objectifs de formation du DÃ©partement Informatique sont tels que cette offre de Master peut Ãªtre considÃ©rÃ©e comme un diplÃ´me unique ne distinguant pas entre le type AcadÃ©mique et le type Professionnel.<br> Profils et CompÃ©tences visÃ©s Les objectifs de cette formation visent un double aspect, c'est-Ã -dire permettre aux Ã©tudiants en fin de cycle master :
+        </p>
+        <ul>
+         <li>Effectuer des travaux de recherche pointus et suivre lâ€™Ã©volution technologique dans un domaine en plein essor.</li>
+         <li>Planifier, dimensionner, dÃ©ployer et administrer des rÃ©seaux dâ€™entreprise et les applications sousÂ­jacentes</li> </ul></blockquote>
+
+       
+        <!--------CompÃ©tences visÃ©s--------->
+        <h3 id="competences">CompÃ©tences visÃ©s</h3> <blockquote>
+           <p class="alinea"> Le Master GÃ©nie Logiciel est une formation technique au cours de laquelle vous approfondirez vos connaissances sur :</p>
+           <ul>
+        <li>
+            Lâ€™architecture logicielle</li>
+        <li>La programmation avancÃ©e</li>
+        <li>La modÃ©lisation et la navigation (XSchema, XPath, DOM et SAX)</li>
+        <li>La gestion de projets</li>
+        <li>La sÃ©curitÃ© des rÃ©seaux</li> </ul>
+        <p class="alinea">Ce cursus comprend Ã©galement des modules de formation portant sur  lâ€™anglais et la communication. Enfin, vous serez amenÃ© Ã  rÃ©aliser des projets industriels et Ã  effectuer des stages en entreprise.</p>
+     
+        <p>
+        Câ€™est la raison pour laquelle : Dâ€™une part, la formation sâ€™est concentrÃ©e sur des cours fondamentaux avec un souci dâ€™Ã©quilibre entre les TD et les TP Dâ€™autre part, des modules Ã  option (deux modules au choix parmi plusieurs) sont orientÃ©s sur les aspects de recherche pour initier les Ã©tudiants aux thÃ¨mes de recherche en cours.
+      </p>  </blockquote>
+  
+         <!--------Programme du master--------->
+        <div id="programme">
+            
+            <h3>Programme</h3>
+            <p class="alinea">Lâ€™enseignement est dispensÃ© de cours magistraux ( 483 h), de travaux dirigÃ©s et de travaux pratiques (525h).<br> Lâ€™horaire moyen hebdomadaire est de 24 heures,la prÃ©sence est obligatoire et contrÃ´lÃ©e. Les tableaux ci-dessous prÃ©sentent les diffÃ©rents modules enseignÃ©s:  </p>
+            <p class="alinea"><b>Indication: </b>
+<strong style="font-size: 12px;">Pour afficher la dÃ©scription, veuillez cliquer sur le bouton <em style="color:red; ">'Afficher'</em> et pour refermer la fenÃªtre, veuillez recliquer sur <em style="color:red; ">le mÃªme bouton</em>.</strong></p>
+             <!--------On a utilisÃ© des tableaux en slide pour dÃ©finir les modules des 3 semestres --------->
+           <div class="slider"> <!--Pour faire l'effet de slides entre les 3 tableaux--> 
+   <div class="slider-viewport">
+    <div id="S1">
+      <div id="S2">
+        <div id="S3">
+          
+              <div class="slider-content">
+                <table >
+                    <thead><tr>
+                    <th>Module</th>
+                    <th>UnitÃ© d'enseignement</th>
+                    <th>Coefficient</th>
+                    <th>CrÃ©dit</th>
+                    <th>Contenu</th></tr>
+                </thead>
+                    <tr>
+                         <td>Algorithmique AvancÃ©e et ComplexitÃ©</td>
+                            <td>fondamentale</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td> <button class="btn" type="button" onclick="toggle_text('m1');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m1">
+                                 
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                   <p>Ce module permet dâ€™acquÃ©rir les notions nÃ©cessaires pour : </p> 
+                                   <ul>
+                                     <li>analyser et classer les problÃ¨mes de diffÃ©rents domaines </li>
+                                     <li> analyser et classer les problÃ¨mes de diffÃ©rents domaines</li>
+                                     <li>construire la ou les solutions </li>
+                                     <li>Ã©valuer les diffÃ©rentes solutions en terme de calcul de complexitÃ© </li>
+                                     <li>Choisir la meilleure solution Ces notions seront vues Ã  travers lâ€™Ã©tude de problÃ¨mes pris dans diffÃ©rents domaines de lâ€™informatique tels que :
+                                     Les rÃ©seaux, les bases de donnÃ©es, Algorithmique du texte ...etc</li>
+                                   </ul>
+                                   <h2>Contenu du module:</h2>
+                                   <ul>
+                                 <li>Les bases de lâ€™analyse algorithmique</li>  
+                                 <li>StratÃ©gies de rÃ©solution de problÃ¨mes</li> 
+                                 <li>Les classes de problÃ¨mes</li> 
+                                 <li>Analyse dâ€™algorithmes de tri</li> 
+                                 <li>Algorithmique des arbres</li> 
+                                 <li>Algorithmique des graphes</li> 
+                                <li>Algorithmes de hachage</li> 
+                                <li>Algorithmique du texte</li></ul> <br>
+                                <h2>References:</h2>
+                                <ol>
+                                  <li>Introduction to algorithms. T. Cormen, C. Leiserson, R. Rivest. MIT Press, 2nd edition 2000.</li> 
+                                  <li>Algorithms and theory of computation handbook, edited by M. Atallah, CRC Press, Purdue University, 1999.</li> 
+                                 <li>Analysis of algorithms: an active learning approach. J.J.McConnell. Jones and Barlett Publishers, 2001.</li>  
+                                 <li>Computational complexity. C.H. Papadimitriou, Addison Wesley, 1994.</li>  
+                                </ol> 
+                                 
+                              </div> </td>
+                    </tr>
+                    <tr>
+                         <td>ModÃ©lisation et Evaluation de Performances des SystÃ¨mes</td>
+                         <td>fondamentale</td>
+                         <td>4</td>
+                            <td>3</td>
+                            <td> <button class="btn" type="button" onclick="toggle_text('m2');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m2">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+            <p> L'objectif de ce module est de sensibiliser les Ã©tudiants aux problÃ¨mes de modÃ©lisation et d'Ã©valuation des performances des systÃ¨mes rÃ©els tels les systÃ¨mes informatiques, les rÃ©seaux de communication et les systÃ¨mes de production. Il se propose de rÃ©pondre aux questions suivantes :</p>
+            <ul>
+           <li>Pourquoi Ã©valuer les performances d'un systÃ¨me ?</li>  
+            <li>Dans quels cas cela est-il nÃ©cessaire ?</li> 
+            <li>Comment modÃ©liser un systÃ¨me ?</li> 
+            <li>Quel type de modÃ¨le utiliser ?</li> 
+            <li>Comment analyser le modÃ¨le ?</li> </ul>
+            <h2>Contenu du module:</h2>
+             <ol>
+               <li>ProblÃ©matique de l'Ã©valuation de performances.</li> 
+               <li>ChaÃ®nes de Markov.</li> 
+               <li>Files dâ€Ÿattente.</li> 
+               <li>Les rÃ©seaux de Petri simples (Analyse structurelle, comportementale, invariants).</li> 
+               <li>Les rÃ©seaux de Petri stochastiques, Analyse des performances.</li> 
+             </ol>
+             <h2>References</h2>
+             <ol>
+                 <li>B. Baynat, ThÃ©orie des files dâ€™attente, Hermes 2000</li>
+                <li>G. Vidal-Naquet, A. Choquet-Geniet, RÃ©seaux de Petri et SystÃ¨mes ParallÃ¨les, Armon Colin 1992</li> 
+                <li>A. Choquet-Geniet, Les RÃ©seau de Petri, un outil de modelisation Dunod 2006</li> 
+             </ol>
+                                
+                              </div> </td>
+                    </tr>
+                    <tr>
+                         <td>Gestion de Projet de DÃ©veloppement de Logiciels     </td>
+                         <td>fondamentale</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td> <button class="btn" type="button" onclick="toggle_text('m3');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m3">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+             <ul>
+                 <li>Permettre Ã  lâ€™Ã©tudiant de comprendre lâ€™enjeu majeur de la gestion de projet.</li>
+                <li>Initier lâ€™Ã©tudiant au processus dâ€™organisation et de planification.</li> 
+                <li>Entrainer lâ€™Ã©tudiant Ã  lâ€™application de processus, mÃ©thodes et outils de planifica- tion.</li> 
+                <li>Initier lâ€™Ã©tudiant aux environnements de gestion de projet.</li> 
+             </ul>
+             <h2>Contenu du module:</h2>
+             <ol>
+             <li>  Introduction</li> 
+              <li>Les modÃ¨les de gestion de projet</li>  
+               <li>Les Ã©lÃ©ments de Gestion de projet</li> 
+               <li>Lâ€™organisation des Ã©quipes de programmation</li> 
+               <li>Les Ã©lÃ©ments de la planification</li> 
+               <li>Le processus de planification</li> 
+               <li>Estimation des charges, dÃ©lais et coÃ»t</li> 
+             </ol>
+             <h2>References</h2>
+             <ol>
+              <li> Principles of software engineering management by Tom GILB Edition Lavoisier.</li> 
+               <li>Software Engineering: A Practitioner's Approach by Roger S Pressman.</li> 
+               <li>Software Project Management in Practice by Pankaj Jalote.</li> 
+               <li>GÃ©nie logiciel: principes, mÃ©thodes et techniques by Alfred Strohmeier et Didier Buchs.</li> 
+             </ol>
+                                  
+                              </div> </td>
+                    </tr>
+                    <tr>
+                    <td>Architecture et Administration de SGBD</td>
+                    <td>fondamentale</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td>  <button class="btn" type="button" onclick="toggle_text('m4');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m4">
+                                 
+                                    <h2>Objectifs de l'enseignement:</h2>
+              <p>MaÃ®trise de lâ€™architecture des SGBD et lâ€™administration dâ€™une base de donnÃ©es aprÃ¨s sa crÃ©ation</p>
+             <h2>Contenu du module:</h2>
+             <ul>
+              <li>Chap1. Introduction : gÃ©nÃ©ralitÃ©s sur les SGBD : concepts et architecture</li>  
+              <li>Chap2. Les mÃ©ta DonnÃ©es : structure et gestion</li>  
+               <li>Chap3. Gestion des accÃ¨s concurrents : transactions et protocoles</li> 
+               <li>Chap4. SÃ©curitÃ© : gestion des reprises, nature des pannes, notion de journal, Sauvegarde et autorisation dâ€™accÃ¨s et droits dâ€™accÃ¨s</li> 
+             </ul>
+             <h2>References:</h2>
+             <ol>
+              <li>J. Date. Introduction aux bases de donnÃ©es. Thomason publishing France 6iÃ¨me Ã©dition. 1998</li>  
+              <li> C. Delobel et M. Adiba : bases de donnÃ©es et systÃ¨mes relationnels. Dunod 1982</li> 
+               <li> T. Connoly et Corolyn Begg. SystÃ¨mes de bases de donnÃ©es : approche pratique de concep- tion de lâ€™implÃ©mentation et de lâ€™administration. Eyrolles 2005</li>
+             </ol>
+                               
+                              </div></td>
+                    </tr>
+                    <tr>
+                        <td>Gestion des projets logiciels</td>
+                        <td>mÃ©thodologie</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td>  <button class="btn" type="button" onclick="toggle_text('m5');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m5">
+                                
+                                    <h2>Objectifs de l'enseignement:</h2>
+    <p>MaÃ®trise de lâ€™architecture des SGBD et lâ€™administration dâ€™une base de donnÃ©es aprÃ¨s sa crÃ©ation</p>
+             <h2>Contenu du module:</h2>
+              <ul>
+              <li>Chap1. Introduction : gÃ©nÃ©ralitÃ©s sur les SGBD : concepts et architecture</li>  
+               <li>Chap2. Les mÃ©ta DonnÃ©es : structure et gestion</li> 
+               <li>Chap3. Gestion des accÃ¨s concurrents : transactions et protocoles</li> 
+               <li>Chap4. SÃ©curitÃ© : gestion des reprises, nature des pannes, notion de journal, Sauvegarde et autorisation dâ€™accÃ¨s et droits dâ€™accÃ¨s</li> 
+              </ul>
+             <h2>References:</h2>
+             <ol>
+               <li>J. Date. Introduction aux bases de donnÃ©es. Thomason publishing France 6iÃ¨me Ã©dition. 1998</li> 
+               <li> C. Delobel et M. Adiba : bases de donnÃ©es et systÃ¨mes relationnels. Dunod 1982</li>
+               <li>T. Connoly et Corolyn Begg. SystÃ¨mes de bases de donnÃ©es : approche pratique de concep- tion de lâ€™implÃ©mentation et de lâ€™administration. Eyrolles 2005</li> 
+             </ol>
+                                 
+                              </div> </td>
+                    </tr>
+                    <tr>
+                        <td>SystÃ¨mes dâ€™exploitation </td>
+                        <td>mÃ©thodologie</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td>  <button class="btn" type="button" onclick="toggle_text('m6');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m6">
+                               
+                                    <h2>Objectifs de l'enseignement:</h2>
+            <p>Approfondir les diffÃ©rents concepts utiles pour la conception dâ€™un systÃ¨me dâ€™exploitation ou la programmation systÃ¨me.
+                Recommandations : Il est conseillÃ© dâ€™utiliser un systÃ¨me dâ€™exploitation (UNIX par exemple) comme exemple en terme dâ€™outil pour chaque concept Ã©tudiÃ©. PrÃ©voir des TPs pour la mise en application des concepts Ã©tudiÃ©s.</p>
+             <h2>Contenu du module:</h2>
+             <ul>
+               <li>Chapitre 1: SYSTEMES DE FICHIERS</li> 
+               <li>Chapitre 2: PROTECTION ET SECURITE</li> 
+               <li>Chapitre 3 : SYNCHRONISATION DES PROCESSUS</li> 
+               <li>Chapitre 4 : COMMUNICATION ENTRE PROCESSUS</li> 
+               <li>Chapitre 5 : INTERBLOCAGE</li> 
+             </ul>
+             <h2>References:</h2>
+             <ol>
+              <li>M. J. Bach, traduit par G.Fellah, â€˜â€™Conception du SystÃ¨me UNIX,â€™â€™ Masson et Prentice Hall, 1990.</li>  
+               <li>J. Beauquier, B. Berard â€˜â€™SystÃ¨mes dâ€™exploitation : Concepts et algorithmesâ€™â€™ McGraw Hill, 1990.</li> 
+              <li>Crocus, â€˜â€™ SystÃ¨mes dâ€™exploitation des ordinateurs,â€™â€™ Dunod informatique 1975.</li>  
+               <li>N. B. Fontaine, P. Hammes, â€˜â€™UNIX SystÃ¨me V: SystÃ¨me et environnement, Masson 1989.</li> 
+               <li>S. Krakowiak, â€˜â€™Principes des systÃ¨mes d'exploitation des ordinateurs,â€™â€™ Dunod informatique 1987.</li> 
+               <li>J-L.Peterson, F.Silbershartz â€˜â€™Operating Systems Concepts,â€™â€™Addison-Wesly Publishing Company,Inc, 1983.</li> 
+               <li>A. Silberschatz, P. B. Galvin â€˜â€™ Principes des systÃ¨mes dâ€™exploitation,â€™â€™ 4 e Edition, Addison Wesley, 1994.</li> 
+               <li> A. S. Tanenbaum, â€˜â€™ Modern Operating Systems, â€™â€™ Second Edition Prentice Hall.</li>
+             </ol>
+                                
+                              </div> </td>
+                    </tr>
+                    <tr>
+                        <td>ANIN : Anglais pour l'informatique</td>
+                        <td>dÃ©couverte</td>
+                         <td>2</td>
+                            <td>2</td>
+                            <td> <button class="btn" type="button" onclick="toggle_text('m7');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m7">
+                                  <p>
+                                    <h2>Objectifs de l'enseignement:</h2> <br>
+          <p>  approfondir les connaissances et facilite la communication et l'expression de l'etudiant en anglais</p>  
+             
+                                 
+                              </div> </td>
+                    </tr>
+                </table>
+            <!--S2-->
+            <table >
+                    <thead><tr>
+                    <th>Module</th>
+                    <th>UnitÃ© d'enseignement</th>
+                    <th>Coefficient</th>
+                    <th>CrÃ©dit</th>
+                    <th>Contenu</th></tr>
+                </thead>
+                    <tr>
+                         <td>Bases de DonnÃ©es AvancÃ©es </td>
+                            <td>fondamentale</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m8');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m8">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+          <p>(DÃ©crire ce que lâ€™Ã©tudiant est censÃ© avoir acquis comme compÃ©tences aprÃ¨s le succÃ¨s Ã  cette matiÃ¨re). Ce cours a lâ€™objectif ambitieux de permettre 
+              la dÃ©couverte des diffÃ©rents aspects liÃ©s aux nouvelles tendances dans les bases de donnÃ©es :</p>
+              <ul>
+              <li>  connaissances sur les bases de donnÃ©es et SGBD orientÃ©s objet</li>
+              <li> connaissances sur les bases de donnÃ©es distribuÃ©es</li>
+              <li> dÃ©couvertes des bases de donnÃ©es mobiles</li>
+              </ul>
+          <h2>Contenu du module:</h2> <ul>
+        <li> Chapitre 1 : Introduction aux SGBD orientÃ©s Objet</li> 
+        <li> Chapitre 2 : SGBD orientÃ©s Objet : les concepts </li> 
+        <li> Chapitre 3 : SGBD OO : Standards et systÃ¨mes </li> 
+        <li> Chapitre 4 : Introduction aux BD distribuÃ©es </li> 
+        <li>  Chapitre 5 : SGBD distribuÃ©s : Concepts avancÃ©s </li> 
+        <li>  Chapitre 6 : Introduction aux bases de donnÃ©es mobiles </li> 
+        <li> Chapitre 7 : Les bases de donnÃ©es mobiles ; concepts avancÃ©s</li> 
+        </ul>
+          <h2>References:</h2>
+          <ol>
+            <li> Omran A. Bukhres, Ahmed K. Elmagarmid : Object Oriented Multidatabase Systems: A solution for advanced applications Prentice Hall 1996</li> 
+                <li>Thomas Connolly, Carolyn Begg: SystÃ¨mes de bases de donnÃ©es : approche pratique de la conception, de lâ€™implementation et de lâ€™administration, Eyrolles 2005</li> 
+                    <li> I. Kumar, Interscience mobile database Systems, Wiley 2006</li> 
+          </ol>
+                                 
+                              </div> </td>
+                    </tr>
+                    <tr>
+                         <td>SystÃ¨mes multimÃ©dia</td>
+                         <td>fondamentale</td>
+                         <td>4.5</td>
+                            <td>3</td>
+                            <td> <a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m9');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m9">
+                                 
+                                    <h2>Objectifs de l'enseignement:</h2>
+          <p>Ce cours a pour objectif dâ€™apporter aux Ã©tudiants les connaissances thÃ©oriques, techniques et pratiques leur permettant d'Ã©tudier, concevoir et rÃ©aliser des logiciels. Il sâ€™agit notamment dâ€™initier les Ã©tudiants aux notions de modÃ©lisation des logiciels, Ã  travers la distinction des concepts dâ€™objets et de composants. Lâ€™Ã©tudiant devra Ãªtre apte -- Ã  analyser, concevoir et valider des logiciels dans le cadre unifiÃ© de UML pour rÃ©pondre aux problÃ¨mes identifiÃ©s de taille, coÃ»t, dÃ©lai, rÃ©utilisabilitÃ©,... -- Ã  structurer des logiciels aux moyens
+             de patrons de conception. -- Ã  utiliser les techniques de conception par composants -- Ã  rÃ©flÃ©chir au dÃ©veloppement en termes dâ€™architectures logicielles.</p>
+          <h2>Contenu du module:</h2> 
+          <ul>
+          <li>  Les spÃ©cifications de logiciels</li>
+          <li>La conception de logiciels</li>
+          <li> Les patrons de conception</li>
+          <li> Les architectures logicielles</li>
+          </ul>
+          <h2>References:</h2>
+          <ol>
+           <li> Composants logiciels et sÃ»retÃ© de fonctionnement intÃ©gration de COTS (components off the shelf) Auteur : ARLAT - Lavoisier 2000-2008.</li>
+           <li> IngÃ©nierie des Composants Logiciels : Concepts techniques et outils Mourad OUSSALAH Juin 2005 - Ed Vuibert</li>
+           <li>Design Patters et Architectures logicielles Wolfgang PREE - Ed Vuibert - 1998</li>
+           <li>Design Patterns : Catalogue de modÃ¨les de conception rÃ©utilisables Erich GAMMA, Richard HELM, Ralph JOHNSON, John VLISSIDES- Ed Vuibert- 1999</li>
+            <li>CAL 2006 (1re ConfÃ©rence francophone sur les Architectures Logicielles) Auteur(s) : OUSSALAH Mourad, OQUENDO Flavio, TAMZALIT Dalila, KHAMMACI Tahar Date de parution: 08-2006</li>
+          </ol>
+                                
+                              </div> </td>
+                    </tr>
+                    <tr>
+                         <td>ModÃ©lisation et Architectures logicielles</td>
+                         <td>fondamentale</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m10');" > Afficher </button></a> <!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m10">
+                                 
+                                    <h2>Objectifs de l'enseignement:</h2>
+          <p>Donner Ã  l'Ã©tudiant les fondements de base de toutes les technologies du multimÃ©dia. L'ensemble des cours thÃ©oriques et pratiques permettra Ã  l'Ã©tudiant de produire une application multimÃ©dia intÃ©grant l'image, la vidÃ©o, le son et le texte.</p>
+          <h2>Contenu du module:</h2> 
+          <ul>
+           <li>Chapitre 1. Introduction</li> 
+           <li>Chapitre 2: L'imagerie numÃ©rique</li> 
+            <li>Chapitre 3: Le son en multimÃ©dia</li> 
+            <li>Chapitre 4: La vidÃ©o en multimÃ©dia</li> 
+            <li>Chapitre 5: Description et Edition de documents multimÃ©dia</li> 
+            <li>Chapitre 6: SpÃ©cification et synchronisation en multimÃ©dia</li> 
+          </ul>
+          <h2>References:</h2>
+          <ol>
+           <li> Miano. Compressed Image File Formats. ACM Press (1999-2005)</li>
+           <li>P. Symes. Digital Video Compression. Mc Graw-Hill (2001-2004)</li>
+           <li>N. Moreau. Techniques de compression des signaux, Masson, 1995</li>
+           <li>N. Jayant, P. Noll. Digital coding of waveforms, Prentice-Hall, 1984</li>
+           <li>J-F Susbielle. Internet, multimÃ©dia et temps rÃ©el. Eyrolles, 2000</li>
+           <li> W Dabbous et al. SystÃ¨mes MultimÃ©dias Communicants. Hermes Science, 2001</li>
+          </ol>
+                                 
+                              </div></td>
+                    </tr>
+                    <tr>
+                    <td>Compilation 2</td>
+                    <td>fondamentale</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td> <a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m11');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m11">
+                                 
+                                    <h2>Objectifs de l'enseignement:</h2>
+          <p>Le cours de compilation de Master 1Ã¨re annÃ©e permet :</p>
+          <ul>
+            <li>d'approfondir les notions supposÃ©es Ã©tudiÃ©es en Licence, tant en ce qui concerne l'analyse lexicale, syntaxique, que le typage.</li>
+            <li> de se concentrer sur les parties propres dâ€™un compilateur. Les transformations de programmes optimisantes, leurs conditions d'application et l'analyse statique des programmes y sont Ã©galement Ã©tudiÃ©es</li>
+          </ul>
+          <h2>Contenu du module:</h2> 
+          <ul>
+           <li> Rappels sur lâ€™analyse lexicale.</li>
+           <li>Rappels sur lâ€™analyse syntaxique.</li>
+           <li>Analyse sÃ©mantique, portÃ©e, tables des symboles.</li>
+           <li>Allocation - Substitution</li>
+           <li>Environnement dâ€™exÃ©cution.</li>
+           <li>Optimisation de code</li>
+           <li>GÃ©nÃ©ration de code.</li>
+          </ul>
+          <h2>References:</h2>
+          <p> Aho A. Ullman J.D., Principes des Compilateur, 1986 Edison Andrew w. appel, Medern Copiler Implementation in ML, Combridge Universty Press 1998</p>
+           
+                                 
+                              </div> </td>
+                    </tr>
+                    <tr>
+                        <td>Fondements de lâ€™Intelligence Artificielle 1</td>
+                        <td>fondamentale</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td> <a href="#S1"><button class="btn" type="button" onclick="toggle_text('m12');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m12">
+                                  <h2>Objectifs de l'enseignement:</h2>
+          Lâ€™Ã©tudiant aprÃ¨s avoir acquis cette matiÃ¨re est capable de : - RÃ©soudre des problÃ¨mes dâ€™Intelligence artificielle <br>
+        - Concevoir des systÃ¨mes dâ€™intelligence artificielle (systÃ¨mes experts, etc...) <br>
+        - Pouvoir Ã©tudier les techniques dâ€™intelligence artificielle avancÃ©es.
+          <h2>Contenu du module:</h2> 
+          <ul>
+
+          <li>Chapitre1 : Introduction gÃ©nÃ©rale</li>
+          <li>Chapitre 2 : Calcul du 1er ordre</li>
+          <li>Chapitre 3 : Les systÃ¨mes de rÃ¨gles de production (SP)</li>
+          <li>Chapitre 4 : SystÃ¨me de rÃ©futation par rÃ©solution</li>
+          <li>Chapitre 5 : StratÃ©gies de recherche</li>
+          <li>Chapitre 6 : Les systÃ¨mes experts</li>
+          <li>Chapitre 7 : Planification en robotique</li>
+          <li>Chapitre 8 : Quelques langages dâ€™IA</li>
+          <li>Chapitre 9: ProblÃ¨mes CSP</li>
+          <li>Chapitre 10 : Introduction Ã  lâ€™IA avancÃ©e.</li>
+          </ul>
+          <h2>References:</h2>
+            <ol>
+               <li> Principles of Artificial Intelligence par J. Nilson</li>
+               <li>Essentials of Artificial Intelligence par Morgan Kaufmann,</li>
+               <li>Artificial Intelligence : A new synthesis par Morgan Kaufmann,</li>
+               <li>Artificial Intelligence: A Modern Approach par Stuart Russell et Peter Norvig aima.cs.berkeley.edu</li>
+               <li>www.cis.temple.edu/ugai/courses.html</li>
+            </ol>
+                                 
+                              </div></td>
+                    </tr>
+                    <tr>
+                        <td>SÃ©curitÃ© Informatique</td>
+                        <td>fondamentale</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m13');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m13">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+          <p>Permet aux Ã©tudiants dâ€ŸacquÃ©rir des compÃ©tences pour assurer le fonctionnement des systÃ¨mes informatiques.</p>
+          <h2>Contenu du module:</h2> 
+          <ul>
+           <li> Objectifs et services de la sÃ©curitÃ© informatique.</li>
+           <li>Menaces et VulnÃ©rabilitÃ©s dans les RÃ©seaux et SystÃ¨mes DistribuÃ©s.</li>
+           <li>Gestion et Analyse du risque.</li>
+           <li>Etude des diffÃ©rents types dâ€Ÿattaques.</li>
+           <li>Architectures de sÃ©curitÃ© (Firewalls).</li>
+           <li>Audit de vulnÃ©rabilitÃ©s (Scanner de vulnÃ©rabilitÃ©s).</li>
+           <li>SÃ©curitÃ© des protocoles de communication.</li>
+           <li>SystÃ¨mes de dÃ©tection dâ€Ÿintrusions.</li>
+           <li>RÃ©seaux privÃ©s virtuels (VLAN, VPN).</li>
+           <li>SÃ©curitÃ© des communications.</li>
+           <li>Certification numÃ©rique.</li>
+           <li>SÃ©curitÃ© des serveurs WEB.</li>
+           <li>SÃ©curitÃ© des serveurs de messagerie Ã©lectronique, des serveurs DNS et des bases de donnÃ©es</li>
+           <li>SÃ©curitÃ© des rÃ©seaux sans fil.</li>
+          </ul>
+          <h2>References:</h2>
+          <ol>
+           <li> Cryptography, Theory and Practice, Douglas Stinson, Chapman and Hall, 3Ã¨me Ã©dition, 2002: existe en traduction (Cryptographie, thÃ©orie et pratique).</li>
+           <li>The Handbook of Applied Cryptography, Menezes, van Oorschot, Vanstone, aussi sur le web: http://www.cacr.math.uwaterloo.ca/hac/</li>
+            <li>Introduction to cryptography with coding theory, Wade Trappe and Lawrence C. Washington, deuxiÃ¨me Ã©dition 2006.</li>
+          </ol>
+                                 
+                              </div></td>
+                    </tr>
+                    <tr>
+                        <td> Anglais</td>
+                        <td>mÃ©thodologie</td>
+                         <td>3</td>
+                            <td>3</td>
+                            <td> <a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m14');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m14">
+                                 
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>Ce cours a pour objectif dâ€™initier les Ã©tudiants aux notions et pratiques rÃ©centes en matiÃ¨re de mÃ©thodologie et de processus de dÃ©veloppement. Il sâ€™agit d'approfondir les diffÃ©rentes activitÃ©s qui constituent le cycle de vie d'un logiciel, Ã  leurs enchaÃ®nements, Ã  leurs interactions et de prendre du recul par rapport Ã  un processus linÃ©aire traditionnel. Lâ€™Ã©tudiant est appelÃ© Ã  : - se familiariser avec les bonnes pratiques des mÃ©thodes dites agiles - se familiariser avec les caractÃ©ristiques et la terminologie 
+                                      du Processus UnifiÃ© -se familiariser avec lâ€™utilisation des versions et des configurations logicielles</p>
+                                    <h2>Contenu du module:</h2> 
+                                    <ul>
+                                    <li>  Methodologie de dÃ©veloppement</li>
+                                    <li>Processus de dÃ©veloppement unifiÃ©</li>
+                                      <li>Les mÃ©thodes agiles</li>
+                                          <li>La gestion de versions et de configuration logicielles</li>
+                                    </ul>
+                                    <h2>References:</h2>
+                                    <ol>
+                                      <li>UML 1.5 2003 http://www.commentcamarche.net/uml/umlintro.php3</li>
+                                          <li>Rational Unified process; Une mÃ©thode de dÃ©veloppement de logiciels Krutchen Phillipe â€“ Editions Eyrolles â€“ 1999.</li>
+                                              <li>MaÃ®triser les projets avec l'Extreme Programming - Pilotage par les tests-client Thierry Cros - CÃ©paduÃ¨s â€“ Editions Eyrolles â€“ Octobre 2004</li>
+                                                  <li>Integrating Agile Development in the Real World Peter Schuh - Charles River Media . Eyrolles - Janvier 2005 -</li>
+                                                      <li>Gestion de configuration MaÃ®trisez vos changements logiciels Linda Djezzar . Edition DUNOD- 2003</li>
+                                    </ol>
+                                 
+                              </div></td>
+                    </tr>
+                   
+                </table>
+          <!--S3-->
+            <table  >
+                    <thead>
+                    <th>Module</th>
+                    <th>UnitÃ© d'enseignement</th>
+                    <th>Coefficient</th>
+                    <th>CrÃ©dit</th>
+                    <th>Contenu</th>
+                </thead>
+                    <tr>
+                         <td>MÃ©thodologie et Processus de DÃ©veloppement de Logiciels </td>
+                            <td>fondamentale</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m15');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m15">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <ul>
+                                      <li>Donner Ã  lâ€™Ã©tudiant un aperÃ§u des concepts dâ€™assurance qualitÃ©.</li>
+                                      <li>Initier lâ€™Ã©tudiant aux mÃ©thodes dâ€™assurance qualitÃ©.</li>
+                                      <li>Initier lâ€™Ã©tudiant Ã  la planification de la qualitÃ© et Ã  sa mesure.</li>
+                                      <li>Permettre Ã  lâ€™Ã©tudiant de rÃ©aliser les activitÃ©s dâ€™assurance qualitÃ© logicielle et Ã  dÃ©velopper et utiliser un processus logiciel.</li>
+                                    </ul>
+                                    <h2>Contenu du module:</h2> 
+                                    <ul>
+                                      <li>La qualitÃ© des logiciels
+                                      <li>Les normes, modÃ¨les et mÃ©thodologies de dÃ©veloppement</li>
+                                      <li>Le processus dâ€™assurance qualitÃ©</li>
+                                      <li>Le plan dâ€™assurance qualitÃ©</li>
+                                      <li>Les risques et la qualitÃ©</li>
+                                    </ul>
+                                    <h2>References:</h2>
+                                    <ol>
+                                    <li>  Assurance qualitÃ© en conception by, Lavoisier.</li>
+                                    <li>Du systÃ¨me d'assurance qualitÃ© Ã  la certification ISO 9002 by FLEUR</li>
+                                    </ol>
+                                 
+                              </div></td>
+                    </tr>
+                    <tr>
+                         <td>Assurance QualitÃ© des Logiciels</td>
+                         <td>fondamentale</td>
+                         <td>5</td>
+                            <td>5</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m16');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m16">
+                                 
+                                    <h2>Objectifs de l'enseignement:</h2>
+          <p>Ce cours vise la dÃ©couverte des diffÃ©rentes facettes du processus dÃ©cisionnel et des modÃ¨les et outils associÃ©s et la maitrise de la technologie des Data Warehouses comme application d'un systÃ¨me dÃ©cisionnel.</p>
+          <h2>Contenu du module:</h2> 
+          <ul>
+          <li>  Chapitre 1 : Introduction aux systÃ¨mes dÃ©cisionnels</li>
+          <li>Chapitre 2 : ModÃ¨les de SystÃ¨me d'Information DÃ©cisionnel (SID)</li>
+            <li>Chapitre 3 : Data Warehouse, Concepts de base et Architecture</li>
+            <li>Chapitre 4 : ModÃ¨les multidimensionnels</li>
+            <li>Chapitre 5 : Les techniques de Data-Mining (exploration de donnÃ©es)</li>
+          </ul>
+          <h2>References:</h2>
+          <ol>
+           <li> W.H. INMON : Building the Data Warehouse</li>
+           <li>R.KIMBALL : Concevoir et dÃ©ployer un Data WareHouse, Guide de conduite de projets. Editions Eyrolles 2000.</li>
+            <li>Thomas Connolly, Carolyn Begg: SystÃ¨mes de bases de donnÃ©es : approche pratique de la conception, de lâ€™implementation et de lâ€™administration, Eyrolles 2005</li>
+            <li>J.C. POMEROL, S. BARBA-ROMERO : Multicriterion decision in management : principals and practice. KLUWER ACADEMIC PUBLISHERS 2000.</li>
+          </ol>
+                                 
+                              </div></td>
+                    </tr>
+                    <tr>
+                         <td>SystÃ¨mes DÃ©cisionnels et EntrepÃ´ts</td>
+                         <td>fondamentale</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td> <a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m17');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m17">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+          <p>maÃ®triser les formalismes de reprÃ©sentation des connaissances dans un cadre certain, incertain, vague, ambiguÃ«, incomplet ou flou.</p>
+          <h2>Contenu du module:</h2> 
+          <ul>
+           <li> Base de la logique classique : logique des propositions, logique des prÃ©dicats, reprÃ©sentation des connaissances par ces logiques.</li>
+           <li>Notion de modalitÃ© : syntaxe, rÃ¨gles de dÃ©duction, prÃ©sentation et discussion sur les divers axiomes. SÃ©mantique : mondes possibles, sÃ©mantique de Kripke.</li>
+            <li>Les logiques modales pour la reprÃ©sentation du temps, des connaissance Ã©pistÃ©miques, dÃ©ontiques.</li>
+            <li>Connaissances menant Ã  des conclusions rÃ©visables : Logique des dÃ©fauts, circonscription, auto- Ã©pistÃ©mique, modÃ¨les prÃ©fÃ©rÃ©s.</li>
+            <li>Les rÃ©seaux sÃ©mantiques : graphes conceptuels, infÃ©rences par propagation, logique de description.</li>
+            <li>L'incertitude totalement ordonnÃ©e : modÃ¨les probabilistes, modÃ¨le de Dempster-Schafer, thÃ©orie des possibilitÃ©s. Utilisation de ces mÃ©thodes pour le raisonnement causal (rÃ©seaux bayÃ©siens)</li>
+          </ul>
+          <h2>References:</h2>
+          D. Kayser : La reprÃ©sentation des connaissances. Hermes 1997 Support de cours A. mokhtari
+          
+                                 
+                              </div> </td>
+                    </tr>
+                    <tr>
+                    <td>ReprÃ©sentation des Connaissances</td>
+                    <td>fondamentale</td>
+                         <td>3</td>
+                            <td>3</td>
+                            <td> <a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m18');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m18">
+                                 
+                              </div></td>
+                    </tr>
+                    <tr>
+                        <td>Techniques dâ€™Expression et de Communication</td>
+                        <td>mÃ©thodologie</td>
+                         <td>3</td>
+                            <td>3</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m19');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m19">
+                                
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>Le but de cet enseignement est d'apprendre aux Ã©tudiants la communication orale et Ã©crite, en milieu universitaire scientifique et aussi en milieu social hors de lâ€™universitÃ©, notamment lors de la recherche d'un premier travail et en entreprise, aprÃ¨s le recrutement. Il prÃ©pare lâ€™Ã©tudiant au monde du travail quâ€™il rejoindra Ã  la fin de ses Ã©tudes.</p>
+                                    <h2>Contenu du module:</h2> 
+                                    <ul>
+                                     <li>Langue : anglais</li> 
+                                     <li>Outils de communication scientifique Ã©crite (Latex, Word, etc.)</li> 
+                                     <li>Techniques de communication Ã©crite</li> 
+                                     <li>Techniques de communication orale</li> 
+                                    </ul>
+                                
+                              </div></td>
+                    </tr>
+                    <tr>
+                        <td>SystÃ¨mes dâ€™Information CoopÃ©ratifs</td>
+                        <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td> <a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m20');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m20">
+                                 
+                                    
+          <h2>Objectifs de l'enseignement:</h2>
+          <p>Avoir une idÃ©e sur les diffÃ©rents aspects de la coopÃ©ration dans les systÃ¨mes d'information.</p>
+          <h2>Contenu du module:</h2> 
+          <ul>
+           <li>Chapitre 1 : Introduction et dÃ©finitions de base (SIC)</li> 
+           <li>Chapitre 2 : Travail CoopÃ©ratif AssistÃ© par Ordinateur (TCAO)</li> 
+           <li> Chapitre 3 : ElÃ©ments de base du workflow</li>
+           <li>Chapitre 4 : ModÃ©lisation des processus</li> 
+           <li>Chapitre 5 : Outils dÃ©diÃ©s au Workflow</li> 
+          </ul>
+          <h2>References:</h2>
+          <ol>
+          <li>Van Der Aalst, Kees Van Hee : "Workflow Management : Models, Methods and Systems", MIT Press 2002.</li>  
+           <li> S. Khoshafian : Groupware & Workflow. Editions Eyrolles 1998.</li>  
+           <li> S. LEVAN : le projet workflow. Editions Eyrolles 2000.</li>  
+           <li> M. SAADOUNE & S. LEVAN : Le projet Groupware. Eyrolles 2000.</li>  
+          </ol>
+                                  
+                              </div> </td>
+                    </tr>
+                    <tr>
+                        <td>Logique Formelle</td>
+                        <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td> <a href="#S1"><button class="btn" type="button" onclick="toggle_text('m21');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m21">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>Ce cours permet d'acquÃ©rir une bonne connaissance des significations pouvant Ãªtre attribuÃ©es aux constructions syntaxiques de programmes, des mÃ©thodes de raisonnement et de validation des programmes. Il forme Ã  la conception et au dÃ©veloppement raisonnÃ© d'applications et facilite
+                                         la comprÃ©hension des choix et modes de fonctionnement des outils et ateliers de dÃ©veloppement.</p>
+                                    <h2>Contenu du module:</h2> 
+                                    <ul>
+                                      <li>ThÃ©orie du Lambda Calcul</li> 
+                                      <li>ThÃ©orie des Combinateurs</li> 
+                                      <li>ThÃ©orie des types</li> 
+                                      <li>Exemples de types : Le langage Caml</li> 
+                                      <li>ThÃ©orÃ¨me de Curry-Howard</li> 
+                                      <li>De Caml vers Ocaml</li> 
+                                      <li>Preuves de propriÃ©tÃ©s avec Coq</li> 
+                                      <li>Les systÃ¨mes de certification : FocaL, B, </li> 
+                                     </ul>
+                                 
+                              </div> </td>
+                    </tr>
+                    <tr>
+                        <td>Concepts AvancÃ©s du GÃ©nie Logiciel</td>
+                        <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td> <a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m22');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m22">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>L'objectif est de proposer aux Ã©tudiants la dÃ©couverte d'un ensemble de techniques et de bonnes pratiques permettant 
+                                        une meilleure maÃ®trise du dÃ©veloppement de logiciels. Et de sensibiliser les Ã©tudiants Ã  l'ingÃ©nierie dirigÃ©e par les modÃ¨les de maniÃ¨re pragmatique pour apprÃ©hender les bÃ©nÃ©fices d'une telle dÃ©marche.</p>
+                                    <h2>Contenu du module:</h2> 
+                                    <ul>
+                                     <li>Les patrons de conception tels que le visiteur, la fabrique, l'oberveur/observÃ©, l'intercepteur, le proxy.</li> 
+                                     <li> Techniques dâ€™adaptation des applications (la rÃ©flexivitÃ©, les protocoles Ã  mÃ©ta-objets, les langages de programmation par aspects).</li> 
+                                     <li>SpÃ©cification du domaine d'activitÃ© sous la forme d'un mÃ©tamodÃ¨le (pour permettre une modÃ©lisation spÃ©cifique aux besoins mÃ©tier).</li> 
+                                     <li>SpÃ©cification de la technologie de mise en oeuvre sous la forme d'un mÃ©tamodÃ¨le (pour introduire les dÃ©tails d'implÃ©mentation (raffinement) par transformation du modÃ¨le mÃ©tier).</li> 
+                                     <li> Utilisation de la gÃ©nÃ©ration de code pour produire tout ou partie de la mise en oeuvre de systÃ¨mes Logiciels.</li> 
+                                    </ul>
+                                     <h2>References:</h2>
+                                     <ol>
+                                      <li>IngÃ©nierie des modÃ¨les - Logiciels et systÃ¨mes (ARAGO 30) Auteur(s) : OFTA . Editions Lavoisier. 2004. Canevas de demande dâ€™habilitation dâ€™une offre de formation du niveau de UML 2 ET MDE - Ingenierie Des Modeles Avec Etudes De Cas Franck Barbier. Dunod. 2005.</li>
+                                      <li>L'ingÃ©nierie dirigÃ©e par les modÃ¨les. Au-delÃ  du MDA (TraitÃ© IC2, sÃ©rie Informatique et SystÃ¨mes d'Information) FAVRE Jean-Marie, ESTUBLIER Jacky, BLAY-FORNARINO Mireille. Editions Lavoisier. 2006.</li>
+                                      <li>Design Patters et Architectures logicielles Wolfgang PREE - Ed Vuibert - 1998</li>
+                                      <li>Design Patterns : Catalogue de modÃ¨les de conception rÃ©utilisables Erich GAMMA, Richard HELM, Ralph JOHNSON, John VLISSIDES- Ed Vuibert- 1999</li>
+                                     </ol>
+                                 
+                              </div> </td>
+                    </tr>
+                    <tr>
+                        <td> Fondements de lâ€™Intelligence Artificielle 2  </td>
+                        <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td><a href="#S1">  <button class="btn" type="button" onclick="toggle_text('m23');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m23">
+                                  
+          <h2>Objectifs de l'enseignement:</h2>
+          <p> Apprendre les base de fondemment de l'intelligence artificielle</p> 
+                                  
+                              </div> </td>
+                    </tr>
+                    <tr>
+                        <td>   Compilation AvancÃ©e</td>
+                        <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m24');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m24">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+          <p>Le but de ce cours est la connaissance de la compilation des langages orientÃ©s objet.</p>
+          <h2>Contenu du module:</h2> 
+          <ul>
+           <li> Compilation des langages orientÃ©s-objet.</li>
+           <li> Structure de donnÃ©es dynamiques et gestion de la mÃ©moire (Ramasse-miettes)</li>
+           <li> Optimisations locales et globales.</li>
+           <li>Allocation des registres, ordonnancement des instructions.</li>
+           <li>Mode dâ€™Ã©valuation : Examen Ecrit, ContrÃ´le continu, TP</li>
+          </ul>
+          <h2>References:</h2>
+          <ol>
+           <li>Aho A. Ullman J.D., Principes des Compilateur, 1986 Edison.</li> 
+           <li>Andrew w. appel, Modern Compiler Implementation in ML, Cambridge University Press 1998</li> 
+          </ol>
+                                 
+                              </div>
+                            </td>
+                    </tr>
+                   
+                </table>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slider-nav">
+    <a href="#S1">S1</a>
+    <a href="#S2">S2</a>
+    <a href="#S3">S3</a>
+    
+  </div>
+            <div id="S4"><h4>Semestre 4</h4>
+                <p class="alinea">Stage en entreprise sanctionnÃ© par un mÃ©moire et une soutenance.</p></div>
+     
+
+ <h3>Bibliographie</h3>
+  
+    <ul>
+<li>SWEBOK: Software Engeneering Body Of Knowledge, norme IEEE, 2004. Voir SWEBOK.
+</li>
+<li>techno-science.net/definition/</li>
+<li>/wiki/GÃ©nie_logiciel</li></ul><br>
+ </section>
+ <!------ le footer ---------->
+    <footer class="footer-bas" id="contacts">
+
+        <div class="footer-gauche"> <!------  l'ecriture a gauche dans le footer ---------->
+
+            <h3>Master<span>Study</span></h3>
+
+            <p class="footer-liens">
+                <a href="index.html" class="link-1">HOME</a>
+                <a href="index.html">FONCTIONNEMENT</a>
+                <a href="index.html">Ã  PROPOS</a>
+                <a href="index.html">CHOIX</a>
+                <a href="#">CONTACT</a>
+            </p>
+
+            <p class="footer-name">MasterStudy Copyright Â© 2022 BOUADI Nassima SADI OUFELLA Ouiza ðŸ“– </p>
+        </div>
+
+        <div class="footer-centre"><!------  l'ecriture a centre dans le footer ---------->
+            <span class="contact"> Contactez Nous <br>
+            <br>
+            </span>
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>BP 32 Bab Ezzouar, 16111 - ALGER.</span> Houari boumdienne, ALGER</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p> +213 023934031</p>
+            </div>
+
+            <div>
+                <i class="fa fa fa-envelope"></i>
+                <p><a href="contact@usthb.dz">contact@usthb.dz</a></p>
+            </div>
+
+        </div>
+        <div class="footer-droit"><!------  l'ecriture a droite dans le footer ---------->
+
+            <p class="footer-about">
+                <span>NOTRE BUT</span><br>
+                Vous Ãªtes sur la bonne adresse si vous hÃ¨sitez sur le choix de votre formation. MasterStudy est Ã  votre service pour vous fournir les informations nÃ¨cessaire sur toutes formations disponibles.
+            </p>
+
+            <div class="footer-icons">
+
+                <span class="col-lg-3 item social"><a href="https://www.facebook.com/groups/999017747488761"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/?lang=fr"><i class="icon ion-social-twitter"></i></a><a href="https://accounts.snapchat.com/accounts/login?continue=%2Faccounts%2Fwelcome"><i class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com/faculte_d_informatique/?hl=fr"><i class="icon ion-social-instagram"></i></a> <!-- les icones ramener du site font awesome ,chaque icone a un chemin de destination -->
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>
