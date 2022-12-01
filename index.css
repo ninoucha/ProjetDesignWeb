@@ -1,0 +1,583 @@
+/* Mise en forme de l'image du fond avec css*/
+
+/* appliquer pour tout*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(images/index.webp);/*Appliquer une images de fond*/
+  height: 500px;
+}
+
+li{ float: right;/* decalage a gauche*/
+  font-size: 20px;
+  color: #33a7b5;
+}
+/* mise en forme de la barre de navigation*/
+.head{
+ position: fixed;/* positionner toujours au mÃªme endroit mÃªme si la page dÃ©file.*/
+ color: white; 
+ background-color: #0b253c;
+ opacity: 0.8;
+ height: 100px;
+ width: 100%;
+ border-bottom:2px solid rgb(177, 177, 177) ;
+ max-width:100%;
+}
+.navigation {
+  height: 40px;
+  float:right;
+  list-style: none;/*enlever tous types de liste ni UL ni OL*/
+  margin-top: 30px;
+  
+}
+/*mise en forme des element de la barre de navigation*/
+.navigation li {
+  display: inline-block; /*pour les potiosionner l'un a cote de l'autre*/
+  padding: 0px 20px;
+  font: normal 36px 'Open Sans', cursive;/* font-familly , size*/
+  font-weight: bold;/* ecriture en gras*/
+  font-size: 18px;
+}
+/*mise en forme du titre MasterStudy*/
+.logo{
+  float: left;
+  font: normal 36px 'Open Sans', cursive;/* font-familly , size*/
+  font-style: italic;
+  font-size: 15px;
+  margin-left: 60px;
+  
+}
+.logo span{ 
+  color: #33a7b5;
+ 
+} 
+/*mise en forme des element de la barre de navigation quand la souris y touche*/
+.navigation li:hover{
+ color: #33a7b5;
+ border: 2px outset white;
+}
+
+/* Mise en forme du boutton COMMENCEZ*/
+.btncom{
+    float: right;/* decalage a droite*/
+  margin-right: 550px;
+    margin-top: -350px;
+  background-color:#33a7b5 ;
+  height:100px ;
+  width: 200px;
+  border:  transparent;
+  color: white;
+  font: bold 20px 'Open Sans', cursive ;
+  font-size: 20px;
+}
+/*mise en forme de l'icone*/
+.logo1{
+ margin-left: 200px;
+ height: 60px;
+}
+/* mise en forme du paragraphe nÂ°1*/
+.par1{
+  text-align: center;
+  padding: 400px 300px;
+  font: normal 30px 'Open Sans', cursive;
+  color: white;
+}
+/*Mise en forme du titre de la page 1 */
+.titrepar1{
+font-size: 50px;
+font-style: italic;
+}
+/*Mise en forme du titre de la page 1 au sur vole de la souris */
+.titrepar1:hover{
+font-size: 50px;
+font-style: italic;
+color:#33a7b5 ;
+}
+/*mise en forme du footer*/
+.footer-bas{
+  background: #0b253c;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+.footer-bas .footer-gauche,
+.footer-bas .footer-centre,
+.footer-bas .footer-droit{
+  display: inline-block;/* pour une ecriture en block l'un a cote de l'autre*/
+  vertical-align: top;
+}
+
+/* footer gauche */
+
+.footer-bas .footer-gauche{
+  width: 40%;
+}
+
+/* MIse en forme du logo MasterStudy dans le footer */
+
+.footer-bas h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+/* MIse en forme du logo seulement la partie Study dans le footer */
+.footer-bas h3 span{
+  color:  #33a7b5;
+}
+
+/* les lien qui sont dans e footer tel que le mail */
+.footer-bas .footer-liens{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-bas .footer-liens a{
+  display:inline-block;
+  line-height: 1.8;
+font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-bas .footer-name{
+  color:  #b7b7b7;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Mise en forme de la deuxieme colonne qui se trouve dans le footer */
+
+.footer-bas .footer-centre{
+  width: 35%;
+}
+
+.footer-bas .footer-centre i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-bas .footer-centre i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+/*mise en forme de l'email de la deuxieme colonne*/
+.footer-bas .footer-centre p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+.footer-bas .footer-centre  span.contact{
+  color: white;
+  line-height:2;
+  font: bold 20px 'Open Sans', cursive ;
+  
+}
+.footer-bas .footer-centre p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-bas .footer-centre p a{
+  color:  #33a7b5;
+  text-decoration: none;;
+}
+
+.footer-bas .footer-liens a:before {
+content: "|";
+font-weight:300;
+font-size: 20px;
+left: 0;
+color: #fff;
+display: inline-block;
+padding-right: 5px;
+}
+
+.footer-bas .footer-liens .link-1:before {
+content: none;
+}
+
+/* Footer droit */
+
+.footer-bas .footer-droit{
+  width: 20%;
+}
+
+.footer-bas .footer-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-bas .footer-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-bas.footer-icons{
+  margin-top: 25px;
+}
+
+.footer-bas .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/*Si vous ne souhaitez pas que le pied de page soit rÃ©actif, supprimez ces requÃªtes multimÃ©dias */
+
+@media (max-width: 880px) {
+
+  .footer-bas{
+      font: bold 14px sans-serif;
+  }
+
+  .footer-bas .footer-gauche,
+  .footer-bas .footer-centre,
+  .footer-bas .footer-droit{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+
+  .footer-bas .footer-centre i{
+      margin-left: 0;
+  }
+
+}
+/**********************************mise en forme du formulaire*******************************************/
+body{
+
+justify-content:center;
+flex-direction: columns;
+align-items: center;
+background-color: #f5f5f5;
+font-family: 'Roboto', sans-serif;
+}
+
+form {
+  
+  background-color: #f6fcfc;
+  padding: 40px 60px;
+  border-radius: 10px;
+  width: 100%;
+  height: 600px;
+}
+form h1{
+  color: #0b253c;
+  text-align:center;
+}
+
+form .social-media{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+form .social-media p{
+  padding: 5px;
+  width: 20px;
+  margin-left: 10px;
+  border-radius: 100%;
+  border: 1px solid #545454;
+  text-align: center;
+  cursor:pointer;
+  color: #545454;
+}
+
+form p.choose-email{
+  margin-top: 20px;
+  text-align:center;
+}
+
+form .inputs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form .inputs input[type='email'], input[type='password']{
+  padding: 15px;
+  border:none;
+  border-radius: 5px;
+  background-color:#f2f2f2;
+  outline:none;
+  margin-bottom: 15px;
+}
+
+form .inputs input[type='email']:hover ,input[type='password']:hover{
+  padding: 15px;
+  border:2px solid black;
+  border-radius: 5px;
+  background-color:#f2f2f2;
+  outline:none;
+  margin-bottom: 15px;
+}
+
+form p.inscription{
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #878787;
+}
+
+form p.inscription span{
+  color: #33a7b5;
+}
+
+.btnsuppression ,.btnconnexion{
+  padding: 15px 25px;
+  border-radius: 5px;
+  border:none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #33a7b5;
+  outline:none;
+  cursor:pointer;
+}
+
+/******************************************Case a cocher****************************************/
+.case{
+margin-left: 50px;
+padding-left: 20px;
+
+}
+/*****************************************Mise en forme de la partie a propos*****************/
+.parApropos{
+float: left;
+padding-top: 100px;
+font: normal 20px 'Open Sans', cursive;
+}
+.Apropos{
+background-color: white;
+}
+.imgApropos{
+float: right;
+height: 400px;
+width: 600px;
+
+}
+.titreApropos{
+font-size: 40px;
+color: #0b253c;
+margin-left: 280px;
+font: normal 36px 'Open Sans', cursive;
+font-style: italic;
+}
+/***************************Mise en forme de la partie description**********************************/
+.pardescription{
+  float: left;
+  padding-top: 80px;
+  font: normal 20px 'Open Sans', cursive;
+  }
+  .description{
+  background-color: white;
+  }
+  .imgdescription{
+  float: right;
+  height: 400px;
+  width: 600px;
+  
+  }
+  .titredescription{
+  font-size: 40px;
+  color: #0b253c;
+  margin-left: 280px;
+  font: normal 36px 'Open Sans', cursive;
+  font-style: italic;
+  }
+/*********************************Mise en forme de la partie comment sa marche******************/
+.imgAC{
+  background-color: white;
+}
+.imgsign ,.imgselect ,.imgstart{
+  margin-left: 100px;
+  height: 140px;
+  width: 160px;
+  border: none;
+  margin-top: 150px;
+}
+.titrefon{
+  font-size: 40px;
+  color: #0b253c;
+  text-align: center;
+  margin-top: 70px;
+  font: normal 36px 'Open Sans', cursive;
+  font-style: italic;
+  
+}
+/************************* Mise en forme des bouttons de choix des formations****************************/
+
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+button { 
+  cursor: pointer;
+  outline: 0;
+  width: 180px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid black;
+  background-color: white;
+  margin-top: 40px;
+  overflow: hidden;
+ 
+}
+button::after {
+  
+  position: relative;
+  top: -40px;
+  display: block;
+  width: 48px;
+  height: 107%;
+  background-color: #000;
+  margin-top: -1px;
+  margin-left: -7px;
+  border-radius: 6px 0 0 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+button::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 46px;
+  margin-left: -7px;
+  margin-top: -1px;
+ 
+}
+
+.box:hover button::before {
+  width: 120%;
+  opacity: .8;
+  background-color: #33a7b5;
+}
+
+.list {
+  display: flex;      
+  background-color: #f6fcfc;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.box {
+  
+   margin-left: 70px;
+  margin-top: -30px;
+  transition: all .3s ease-out;
+  will-change: transform;
+
+}
+
+.box:hover .cover {
+  -webkit-transform: translateY(-14px) scale(1);
+          transform: translateY(-14px) scale(1);
+}
+
+.box button {
+  border: 1px solid #33a7b5;
+  color: #fff;
+  font-size: 22px;
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  transform: translateX(10px);
+
+}
+.box button::after {
+  content: "";
+  background-color: #33a7b5;
+  top: -85px;
+  background-position: center;
+}
+
+.cover {
+  
+  transition: all 200ms ease-in-out;
+  will-change: transform;
+}
+
+.cover img {
+  -webkit-transition: all 160ms ease-in-out;
+  transition: all 160ms ease-in-out;
+}
+
+.box .cover::after {
+  content: "";
+  z-index: -99;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  display: block;
+  width: 160px;
+  height: 214px;
+  opacity: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 160px 214px;
+  -webkit-filter: blur(24px);
+          filter: blur(24px);
+
+  transition: all 160ms ease-in-out;
+  will-change: transform;
+  
+}
+.box:hover .cover::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.box .cover::after { 
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2s8vYjp56b2Y-ePmQgQ3-HCfGTjxAqBF4Dfsv70QNyYYxkkJLYIVCosQlZ5tmG35ZkMI&usqp=CAU');
+}
+
+.box button div::before {
+  content: 'Consulter';
+  position: relative;
+  top: -44px;
+  left: -4px;
+  color: #33a7b5;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.box:hover button div::before {
+  color: #fff;
+}
