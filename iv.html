@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="fr"><!--La langue francaise-->
+<head>
+    <meta charset="UTF-8"><!--un codage de caractÃ¨res informatiques-->
+    <link href="style.css" rel="stylesheet"><!-- le liens vers notre pages css-->
+    <!------ les tag pour l'ajout des icones ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" >
+       <script src="https://kit.fontawesome.com/50149a0ab1.js" ></script>
+    <title>Informatique visuel</title><!--Titre de notre page-->
+</head>
+<body>
+
+  
+ <!-- une fonction JS pour afficher un text rn click sur un boutton-->
+ <script >
+  function toggle_text(id) {
+    var span = document.getElementById(id);
+    if(span.style.display == "none") {
+      span.style.display = "inline";
+    } else {
+      span.style.display = "none";
+    }
+  }
+  </script> <br>
+
+   <!--  un bloc div qui possede une image img et un titre h1 ecrit sur l'image-->
+    <div>
+  <img src="https://www.baumann-avocats.com/images/avocat-informatique-21.jpg" alt="" style=" width: 100%;height: 300px; opacity: 0.6; position: absolute;margin-top: -20px;">
+  <div style="z-index: 1;position: absolute; margin: 0 auto; top: 0%; left: 0;right: 0;">
+     <h1 class="bloc" >Informatique visuelle</h1>
+ </div>
+
+</div>
+<!--La partie navigation  -->
+<!-- on possede plusieurs liens de navigation  "home" pour revenir a la page principale et le reste c'est la navigation interne-->
+    <nav class="navIV">
+        <ul class="d">
+                <li class="titrenav">Page d'acceuil  :</li><br>
+                  <li><a  href="index.html">Home</a></li><br>
+                  <li class="titrenav">PrÃ©sentation du domaine :</li><br>
+                
+                <li><a  href="#Histoire">Histoire</a></li>
+                  <li><a  href="#definition">DÃ©finition</a></li>
+                   <li><a href="#Detail">Plus de dÃ©tails</a></li><br>
+                    <li class="titrenav">PrÃ©sentation de la formation :</li><br>
+                    <li class="dropdown">
+                    <a href="#programme" class="dropbtn">Programme</a>
+                    <div class="dropdown-content">
+    
+                        <a  href="#S1">S1</a>
+                        <a  href="#S2">S2</a>
+                        <a  href="#S3">S3</a>
+                        <a href="#S4">S4</a>
+    
+                    </div>
+                  </li>
+                 
+                  <li><a  href="#Contexte">Contexte et objectifs</a></li>
+                  <li><a href="#competences">CompÃ©tences visÃ©s</a></li>
+                </ul>
+            </nav>
+            <!--La partie des liens-->
+            <!-- on a un titre h3  "lien" qui possede des liens 'a' menant vers des sites internet descripteur et image img-->
+             <div class="links">
+              <h3>liens</h3>
+              
+              <ul>
+                <li> <a href="https://fr.wikipedia.org/wiki/R%C3%A9seau_de_t%C3%A9l%C3%A9communications">Wikipedia</a> </li>
+                <li><a href="https://www.techno-science.net/definition/11697.html">Bibliographie</a></li>
+              </ul>
+              <img src="images/rsd1.jpg" alt="" >
+          </div>
+          <!-- on a une section "contenuMaster" qui possede differente information sur IV-->
+          <section class="contenuMaster">
+        <br>
+              <!-- on a un titre H3 "histoire" qui possede 2 paragraphes p descripteur et une image img-->
+                <h3 id="Histoire">Histoire de l'informatique visuelle:</h3><blockquote>
+               <p class="alinea"> La vision par ordinateur est un domaine scientifique et branche de lâ€™intelligence artificielle qui traite de la faÃ§on dont les ordinateurs peuvent acquÃ©rir une comprÃ©hension de haut niveau Ã  partir d'images ou de vidÃ©os numÃ©riques.<br> Du point de vue de l'ingÃ©nierie, il cherche Ã  comprendre et Ã  automatiser les tÃ¢ches que le systÃ¨me visuel humain peut effectuer.<p class="alinea">Les tÃ¢ches de vision par ordinateur comprennent des procÃ©dÃ©s pour acquÃ©rir, traiter, analyser et Â« comprendre Â» des images numÃ©riques, et extraire des donnÃ©es afin de produire des informations numÃ©riques ou symboliques, par ex. sous forme de dÃ©cisions.Dans ce contexte, la comprÃ©hension signifie la transformation d'images visuelles (l'entrÃ©e de la rÃ©tine) en descriptions du monde qui ont un sens pour les processus de pensÃ©e et peuvent susciter une action appropriÃ©e.<br>Cette comprÃ©hension de l'image peut Ãªtre vue comme lâ€™acquisition d'informations symboliques Ã  partir de donnÃ©es d'image Ã  l'aide de modÃ¨les construits Ã  l'aide de la gÃ©omÃ©trie, de la physique, des statistiques et de la thÃ©orie de l'apprentissage.</p>
+                <p class="alinea">La discipline scientifique de la vision par ordinateur s'intÃ©resse Ã  la thÃ©orie des systÃ¨mes artificiels qui extraient des informations Ã  partir d'images. Les donnÃ©es d'image peuvent prendre de nombreuses formes, telles que des sÃ©quences vidÃ©o, des vues de plusieurs camÃ©ras, des donnÃ©es multidimensionnelles Ã  partir d'un scanner 3D ou d'un appareil de numÃ©risation mÃ©dical. La discipline technologique de la vision par ordinateur cherche Ã  appliquer les modÃ¨les thÃ©oriques dÃ©veloppÃ©s Ã  la construction de systÃ¨mes de vision par ordinateur.<br>
+                Ce pendant Le dÃ©veloppement de la vision par ordinateur a commencÃ© dans les universitÃ©s pionniÃ¨res de l'intelligence artificielle Ã  la fin des annÃ©es 1960. Lâ€™objectif Ã©tait dâ€™imiter le systÃ¨me visuel humain, premiÃ¨re Ã©tape pour doter les robots d'un comportement intelligent9. En 1966, on croyait que cela pouvait Ãªtre rÃ©alisÃ© grÃ¢ce Ã  un projet d'Ã©tÃ©, en attachant une camÃ©ra Ã  un ordinateur et en lui faisant "dÃ©crire ce qu'il voyait"</p></blockquote>
+             <!-- on a un titre H3 "definition" qui possede un paragraphe p descripteur et une image img-->
+         <h3 id="definition">DÃ©finition</h3> <blockquote>
+        <p class="alinea"> L'informatique visuelle est un domaine de l'informatique qui traite de l'acquisition, de l'analyse et de la synthÃ¨se de donnÃ©es visuelles grÃ¢ce Ã  l'utilisation de ressources informatiques. Il englobe plusieurs domaines de la science (informatique en particulier), des mathÃ©matiques, de la physique et des sciences cognitives. <br>L'informatique visuelle vise Ã  nous permettre de contrÃ´ler et d'interagir avec les activitÃ©s Ã  travers la manipulation d'images visuelles, soit en tant qu'objets directs, soit simplement en tant que reprÃ©sentations d'objets non visuels.<br> Les mÃ©dias impliquÃ©s peuvent 
+            Ãªtre des images, des modÃ¨les 3D, des vidÃ©os, des diagrammes et mÃªme des icÃ´nes simples. </p></blockquote>
+           <img src="images/iv.webp" alt="image reseau" style=" height: 300px;width: 400px; margin-left: 200px;" >    
+   
+     <!-- on a un titre H3 "Explication dÃ©taillÃ©e de L'informatique visuelle" qui possede 2 paragraphes p descripteur -->
+      <h3 id="Detail">Explication dÃ©taillÃ©e de L'informatique visuelle:</h3>
+<blockquote>
+      <p class="alinea">
+        L'informatique visuelle est un domaine assez vaste avec de nombreux sous-domaines, mais tous sont liÃ©s Ã  l'aspect visuel de l'informatique. L'informatique visuelle traite de tout ce qui concerne les visuels informatiques - du matÃ©riel aux Ã©quations mathÃ©matiques derriÃ¨re chaque pixel de couleur. Son objectif principal est d'utiliser des entitÃ©s visuelles pour la manipulation de tout ce qui nous entoure, tangible ou intangible. L'informatique visuelle peut Ãªtre divisÃ©e en deux branches principales, comme suit:</p>
+        <p class="alinea">
+       Environnement informatique visuel: le paradigme visuel utilisÃ© dans l'interaction humaine avec les ordinateurs - la combinaison du multimÃ©dia et du texte, plutÃ´t que du simple texte seul.</p>
+       <p class="alinea">Applications visuelles: elles traitent de grandes quantitÃ©s de donnÃ©es d'images, telles que des sÃ©quences vidÃ©o et 3D, ainsi que des images, des diagrammes et toute entitÃ© visible liÃ©e aux ordinateurs. <br>Cependant, les gens comprennent et associent gÃ©nÃ©ralement l'informatique visuelle avec la vidÃ©o, l'animation et la modÃ©lisation et la conception 3D (CAO), qui ne sont que l'un des deux principaux domaines du domaine.</p>
+     </blockquote>
+     <!--On  un titre H3"Comment fonctionne la vision par ordinateur" et 2 paragraphes p descripteurs-->
+    <h3>Comment fonctionne la vision par ordinateur ?</h3>
+    <p>La vision par ordinateur a besoin de beaucoup de donnÃ©es. Elle exÃ©cute des analyses de donnÃ©es encore et encore jusqu'Ã  ce qu'elle perÃ§oive des distinctions et reconnaisse finalement les images.<br> Par exemple, pour entraÃ®ner un ordinateur Ã  reconnaÃ®tre des pneus de voiture, elle doit recevoir de grandes quantitÃ©s d'images de pneus et d'Ã©lÃ©ments liÃ©s aux pneus pour apprendre les diffÃ©rences et reconnaÃ®tre un pneu, en particulier un pneu sans dÃ©faut.</p>
+
+    <p class="alinea">Deux technologies essentielles sont utilisÃ©es pour y parvenir : un type d' apprentissage automatique appelÃ© <b>apprentissage en profondeur</b> et <b>un rÃ©seau de neurones convolutifs (CNN)</b>.</p>
+    <!--on un titre H3 "Applications de vision par ordinateur" qui possede 2 pragraphes descripteurs et une liste ul-->
+    
+    <h3>Applications de vision par ordinateur</h3>
+    <p class="alinea">Il y a beaucoup de recherches en cours dans le domaine de la vision par ordinateur, mais il ne s'agit pas seulement de recherche. Les applications du monde rÃ©el dÃ©montrent l'importance de la vision par ordinateur pour les entreprises, les secteurs du divertissement, des transports, des soins de santÃ© et dans la vie quotidienne. L'un des principaux moteurs de la croissance de ces applications est le flot d'informations visuelles provenant des smartphones, des systÃ¨mes de sÃ©curitÃ©, des camÃ©ras de circulation et autres dispositifs dotÃ©s d'instruments visuels.</p>
+    <p>Ces informations constituent un banc d'essai pour la formation des applications de vision par ordinateur et une rampe de lancement pour leur intÃ©gration dans toute une sÃ©rie d'activitÃ©s humaines :</p>
+    <ul>
+      <li>IBM a utilisÃ© la vision par ordinateur pour crÃ©er My Moments pour le tournoi de golf Masters 2018. IBM Watson a regardÃ© des centaines d'heures d'enregistrements filmÃ©s de Masters et a pu identifier les images (et les sons) des plans importants.</li>
+      <li>Google Translate permet aux utilisateurs de pointer la camÃ©ra d'un smartphone vers un panneau dans une autre langue et d'obtenir presque immÃ©diatement une traduction du panneau dans la langue de leur choix.</li>
+      <li>Le dÃ©veloppement des vÃ©hicules autonomes repose sur la vision par ordinateur, qui donne un sens aux donnÃ©es visuelles fournies par les camÃ©ras et autres capteurs de la voiture. </li>
+      <li>IBM applique la technologie de vision par ordinateur avec des partenaires comme Verizon afin d'amener l'IA intelligente Ã  la pÃ©riphÃ©rie et d'aider les constructeurs automobiles Ã  identifier les dÃ©fauts de qualitÃ© avant qu'un vÃ©hicule ne quitte l'usine.</li>
+    </ul>
+    <!--on a un titre H3 "Exemples de vision par ordinateur" qui possede un paragraphe p et des definition et une image img -->
+    <h3>Exemples de vision par ordinateur</h3>
+
+    <p>Voici quelques exemples de tÃ¢ches de vision par ordinateur Ã©tablies :</p>
+
+   <dl>
+     <dt class="alinea">la classification d'images :</dt>
+     <dd>Voit une image et peut la classer (un chien, une pomme, le visage d'une personne). Plus prÃ©cisÃ©ment, elle est capable de prÃ©voir avec prÃ©cision qu'une image donnÃ©e appartient Ã  une certaine classe. Par exemple, une entreprise de mÃ©dias sociaux peut vouloir l'utiliser pour identifier et isoler automatiquement les images rÃ©prÃ©hensibles tÃ©lÃ©chargÃ©es par les utilisateurs.</dd>
+     <dt class="alinea">La dÃ©tection d'objets </dt>
+     <dd>peut utiliser la classification d'images pour identifier une certaine classe d'images, puis dÃ©tecter et mettre en tableau leur apparence dans une image ou une vidÃ©o. Cela inclut, par exemple, la dÃ©tection de dommages sur une chaÃ®ne de montage ou l'identification de machines nÃ©cessitant une maintenance.</dd>
+     <dt class="alinea">La rÃ©cupÃ©ration d'images basÃ©e sur le contenu</dt>
+     <dd> utilise la vision par ordinateur pour parcourir, rechercher et rÃ©cupÃ©rer des images provenant de grands magasins de donnÃ©es, en fonction du contenu des images plutÃ´t que des balises de mÃ©tadonnÃ©es qui leur sont associÃ©es. </dd>
+   </dl>
+   <img src="images/ivnew.png" alt="" style="width: 450px; margin-left: 200px;">
+
+   <!--on a un titre H3""Pourquoi faire une formation en vision par ordinateur" , un paragraphe p descripteur-->
+   <h3>Pourquoi faire une formation en vision par ordinateur ?</h3>
+   <p class="alinea">25% du cerveau humain sert Ã  la vision (8% pour lâ€™ouÃ¯e et 3% pour le toucher). Il est donc tout naturel de vouloir doter les applications intelligentes de cette facultÃ© afin que celles-ci puissent davantage apprÃ©hender et interagir avec le monde qui les entoure.<br> Dans cette spÃ©cialisation, vous dÃ©couvrirez les outils et techniques utilisÃ©s dans la reconnaissance dâ€™objets et le suivi de ceux-ci sur des flux vidÃ©os Ã  lâ€™aide de rÃ©seaux de neurones spÃ©cialisÃ©s. De nombreux cas pratiques jalonneront cette spÃ©cialisation en passant par la classification dâ€™images, la reconnaissance dâ€™objets et la reconnaissance faciale.</p>
+   <!--on a un titre H3"Contexte et Objectifs de la formation" et un paragraphe descripteur p-->      
+   <h3 id="Contexte">Contexte et Objectifs de la formation</h3>
+          <blockquote>
+         <p class="alinea">
+            Dans ce contexte, la comprÃ©hension signifie la transformation d'images visuelles (l'entrÃ©e de la rÃ©tine) en descriptions du monde qui ont un sens pour les processus de pensÃ©e et peuvent susciter une action appropriÃ©e.<br> Cette comprÃ©hension de l'image peut Ãªtre vue comme lâ€™acquisition d'informations symboliques Ã  partir de donnÃ©es d'image Ã  l'aide de modÃ¨les construits Ã  l'aide de la gÃ©omÃ©trie, 
+            de la physique, des statistiques et de la thÃ©orie de l'apprentissage.
+            La discipline scientifique de la vision par ordinateur s'intÃ©resse Ã  la thÃ©orie des systÃ¨mes artificiels qui extraient des informations Ã  partir d'images.<br> Les donnÃ©es d'image peuvent prendre de nombreuses formes, telles que des sÃ©quences vidÃ©o, des vues de plusieurs camÃ©ras, des donnÃ©es multidimensionnelles Ã  partir d'un scanner 3D ou d'un appareil de numÃ©risation mÃ©dical. La discipline technologique de la vision 
+            par ordinateur cherche Ã  appliquer les modÃ¨les thÃ©oriques dÃ©veloppÃ©s Ã  la construction de systÃ¨mes de vision par ordinateur. </p></blockquote>
+
+       <!-- on a un titre H3 "Programme de la formation en rÃ¨seaux et tÃ¨lÃ¨comunication" qui possede 2 paragraphes descripteurs un text important ecrit dans une balise Strong ainsi que plusieurs bloc de div-->
+        <div id="programme">
+         
+            <h3>Programme de la formation en informatique visuelle</h3>
+            <p class="alinea">Lâ€™enseignement est dispensÃ© de cours magistraux ( 483 h), de travaux dirigÃ©s et de travaux pratiques (525h).<br> Lâ€™horaire moyen hebdomadaire est de 24 heures,la prÃ©sence est obligatoire et contrÃ´lÃ©e. Les tableaux ci-dessous prÃ©sentent les diffÃ©rents modules enseignÃ©s:  </p>
+            <p class="alinea"><b>Indication: </b>
+<strong style="font-size: 12px;">Pour afficher la dÃ©scription, veuillez cliquer sur le bouton <em style="color:red; ">'Afficher'</em> et pour refermer la fenÃªtre, veuillez recliquer sur <em style="color:red; ">le mÃªme bouton</em>.</strong></p>
+           <div class="slider"> <!--Pour faire l'effet de slides entre les 3 tableaux--> 
+  <div class="slider-viewport">
+    <div id="S1">
+      <div id="S2">
+        <div id="S3">
+          
+              <div class="slider-content">
+                <!-- tableau descripteur S1-->
+                <!-- on a un Tableau qui contient plusieur lignes Tr ainsi que des colonnes td-->
+                <table >
+                    <thead> <!--la partie head du tableau-->
+                      <tr>
+                    <th>Module</th>
+                    <th>UnitÃ© d'enseignement</th>
+                    <th>Coefficient</th>
+                    <th>CrÃ©dit</th>
+                    <th>Contenu</th></tr>
+                </thead>
+                 <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>Algorithmique AvancÃ©e et ComplexitÃ©</td>
+                            <td>fondamentale</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td> <button class="btn" type="button" onclick="toggle_text('m1');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS--->
+                              <div id="m1">
+
+                     <h2>Objectifs de l'enseignement:</h2>
+                     <p>Ce module permet dâ€™acquÃ©rir les notions nÃ©cessaires pour :</p>
+                     <ul>
+                      <li>analyser et classer les problÃ¨mes de diffÃ©rents domaines </li>
+                      <li>construire la ou les solutions</li>
+                      <li>Ã©valuer les diffÃ©rentes solutions en terme de calcul de complexitÃ© </li>
+                      <li>Choisir la meilleure solution Ces notions seront vues Ã  travers lâ€™Ã©tude de problÃ¨mes pris dans diffÃ©rents domaines de lâ€™informatique tels que :
+                      Les rÃ©seaux, les bases de donnÃ©es, Algorithmique du texte ...etc</li></ul>
+                    <h2>Contenu du module:</h2>
+                    <ul>
+                  <li>Les bases de lâ€™analyse algorithmique</li>  
+                  <li>StratÃ©gies de rÃ©solution de problÃ¨mes</li> 
+                  <li>Les classes de problÃ¨mes</li> 
+                  <li>Analyse dâ€™algorithmes de tri</li> 
+                  <li>Algorithmique des arbres</li> 
+                  <li>Algorithmique des graphes</li> 
+                 <li>Algorithmes de hachage</li> 
+                 <li>Algorithmique du texte</li> </ul><br>
+                 <h2>References:</h2>
+                 <ol>
+                   <li>Introduction to algorithms. T. Cormen, C. Leiserson, R. Rivest. MIT Press, 2nd edition 2000.</li> 
+                   <li>Algorithms and theory of computation handbook, edited by M. Atallah, CRC Press, Purdue University, 1999.</li> 
+                  <li>Analysis of algorithms: an active learning approach. J.J.McConnell. Jones and Barlett Publishers, 2001.</li>  
+                  <li>Computational complexity. C.H. Papadimitriou, Addison Wesley, 1994.</li>  
+                 </ol>   
+                                 
+                              </div>
+                             </td>
+                    </tr>
+                     <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>ModÃ©lisation et Evaluation de Performances des SystÃ¨mes</td>
+                         <td>fondamentale</td>
+                         <td>4</td>
+                            <td>3</td>
+                            <td> <button class="btn" type="button" onclick="toggle_text('m2');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m2">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>L'objectif de ce module est de sensibiliser les Ã©tudiants aux problÃ¨mes de modÃ©lisation et d'Ã©valuation des performances des systÃ¨mes rÃ©els tels les systÃ¨mes informatiques, les rÃ©seaux de communication et les systÃ¨mes de production. Il se propose de rÃ©pondre aux questions suivantes :</p>
+                                    <ul>
+                                  <li>Pourquoi Ã©valuer les performances d'un systÃ¨me ?</li>  
+                                   <li>Dans quels cas cela est-il nÃ©cessaire ?</li> 
+                                   <li>Comment modÃ©liser un systÃ¨me ?</li> 
+                                   <li>Quel type de modÃ¨le utiliser ?</li> 
+                                   <li>Comment analyser le modÃ¨le ?</li> </ul>
+                                   <h2>Contenu du module:</h2>
+                                    <ol>
+                                      <li>ProblÃ©matique de l'Ã©valuation de performances.</li> 
+                                      <li>ChaÃ®nes de Markov.</li> 
+                                      <li>Files dâ€Ÿattente.</li> 
+                                      <li>Les rÃ©seaux de Petri simples (Analyse structurelle, comportementale, invariants).</li> 
+                                      <li>Les rÃ©seaux de Petri stochastiques, Analyse des performances.</li> 
+                                    </ol>
+                                    <h2>References</h2>
+                                    <ol>
+                                        <li>B. Baynat, ThÃ©orie des files dâ€™attente, Hermes 2000  </li>
+                                       <li>G. Vidal-Naquet, A. Choquet-Geniet, RÃ©seaux de Petri et SystÃ¨mes ParallÃ¨les, Armon Colin 1992</li> 
+                                       <li>A. Choquet-Geniet, Les RÃ©seau de Petri, un outil de modelisation Dunod 2006</li> 
+                                    </ol>   
+                              </div></td>
+                    </tr>
+                     <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>Gestion de Projet de DÃ©veloppement de Logiciels     </td>
+                         <td>fondamentale</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td><button class="btn" type="button" onclick="toggle_text('m3');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m3">
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <ul>
+                                        <li>Permettre Ã  lâ€™Ã©tudiant de comprendre lâ€™enjeu majeur de la gestion de projet.</li>
+                                       <li>Initier lâ€™Ã©tudiant au processus dâ€™organisation et de planification.</li> 
+                                       <li>Entrainer lâ€™Ã©tudiant Ã  lâ€™application de processus, mÃ©thodes et outils de planifica- tion.</li> 
+                                       <li>Initier lâ€™Ã©tudiant aux environnements de gestion de projet.</li> 
+                                    </ul>
+                                    <h2>Contenu du module:</h2>
+                                    <ol>
+                                    <li>  Introduction</li> 
+                                     <li>Les modÃ¨les de gestion de projet</li>  
+                                      <li>Les Ã©lÃ©ments de Gestion de projet</li> 
+                                      <li>Lâ€™organisation des Ã©quipes de programmation</li> 
+                                      <li>Les Ã©lÃ©ments de la planification</li> 
+                                      <li>Le processus de planification</li> 
+                                      <li>Estimation des charges, dÃ©lais et coÃ»t</li> 
+                                    </ol>
+                                    <h2>References</h2>
+                                    <ol>
+                                     <li> Principles of software engineering management by Tom GILB Edition Lavoisier.</li> 
+                                      <li>Software Engineering: A Practitioner's Approach by Roger S Pressman.</li> 
+                                      <li>Software Project Management in Practice by Pankaj Jalote.</li> 
+                                      <li>GÃ©nie logiciel: principes, mÃ©thodes et techniques by Alfred Strohmeier et Didier Buchs.</li> 
+                                    </ol> 
+                              </div></td>
+                    </tr>
+                     <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                    <td>Architecture et Administration de SGBD</td>
+                    <td>fondamentale</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td><button class="btn" type="button" onclick="toggle_text('m4');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS--->
+                              <div id="m4">
+                                    <h2>Objectifs de l'enseignement:</h2>
+                  <p>MaÃ®trise de lâ€™architecture des SGBD et lâ€™administration dâ€™une base de donnÃ©es aprÃ¨s sa crÃ©ation</p>
+                 <h2>Contenu du module:</h2>
+                 <ul>
+                  <li>Chap1. Introduction : gÃ©nÃ©ralitÃ©s sur les SGBD : concepts et architecture</li>  
+                  <li>Chap2. Les mÃ©ta DonnÃ©es : structure et gestion</li>  
+                   <li>Chap3. Gestion des accÃ¨s concurrents : transactions et protocoles</li> 
+                   <li>Chap4. SÃ©curitÃ© : gestion des reprises, nature des pannes, notion de journal, Sauvegarde et autorisation dâ€™accÃ¨s et droits dâ€™accÃ¨s</li> 
+                 </ul>
+                 <h2>References:</h2>
+                 <ol>
+                  <li>J. Date. Introduction aux bases de donnÃ©es. Thomason publishing France 6iÃ¨me Ã©dition. 1998</li>  
+                  <li> C. Delobel et M. Adiba : bases de donnÃ©es et systÃ¨mes relationnels. Dunod 1982</li> 
+                   <li> T. Connoly et Corolyn Begg. SystÃ¨mes de bases de donnÃ©es : approche pratique de concep- tion de lâ€™implÃ©mentation et de lâ€™administration. Eyrolles 2005</li>
+                 </ol>  
+                              </div> </td>
+                    </tr>
+                     <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>SystÃ¨mes dâ€™exploitation</td>
+                        <td>mÃ©thodologie</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td><button class="btn" type="button" onclick="toggle_text('m5');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m5">
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>Approfondir les diffÃ©rents concepts utiles pour la conception dâ€™un systÃ¨me dâ€™exploitation ou la programmation systÃ¨me.
+                                        Recommandations : Il est conseillÃ© dâ€™utiliser un systÃ¨me dâ€™exploitation (UNIX par exemple) comme exemple en terme dâ€™outil pour chaque concept Ã©tudiÃ©. PrÃ©voir des TPs pour la mise en application des concepts Ã©tudiÃ©s.</p>
+                                     <h2>Contenu du module:</h2>
+                                     <ul>
+                                       <li>Chapitre 1: SYSTEMES DE FICHIERS</li> 
+                                       <li>Chapitre 2: PROTECTION ET SECURITE</li> 
+                                       <li>Chapitre 3 : SYNCHRONISATION DES PROCESSUS</li> 
+                                       <li>Chapitre 4 : COMMUNICATION ENTRE PROCESSUS</li> 
+                                       <li>Chapitre 5 : INTERBLOCAGE</li> 
+                                     </ul>
+                                     <h2>References:</h2>
+                                     <ol>
+                                      <li>M. J. Bach, traduit par G.Fellah, â€˜â€™Conception du SystÃ¨me UNIX,â€™â€™ Masson et Prentice Hall, 1990.</li>  
+                                       <li>J. Beauquier, B. Berard â€˜â€™SystÃ¨mes dâ€™exploitation : Concepts et algorithmesâ€™â€™ McGraw Hill, 1990.</li> 
+                                      <li>Crocus, â€˜â€™ SystÃ¨mes dâ€™exploitation des ordinateurs,â€™â€™ Dunod informatique 1975.</li>  
+                                       <li>N. B. Fontaine, P. Hammes, â€˜â€™UNIX SystÃ¨me V: SystÃ¨me et environnement, Masson 1989.</li> 
+                                       <li>S. Krakowiak, â€˜â€™Principes des systÃ¨mes d'exploitation des ordinateurs,â€™â€™ Dunod informatique 1987.</li> 
+                                       <li>J-L.Peterson, F.Silbershartz â€˜â€™Operating Systems Concepts,â€™â€™Addison-Wesly Publishing Company,Inc, 1983.</li> 
+                                       <li>A. Silberschatz, P. B. Galvin â€˜â€™ Principes des systÃ¨mes dâ€™exploitation,â€™â€™ 4 e Edition, Addison Wesley, 1994.</li> 
+                                       <li> A. S. Tanenbaum, â€˜â€™ Modern Operating Systems, â€™â€™ Second Edition Prentice Hall.</li>
+                                     </ol> 
+                              </div> </td>
+                    </tr>
+                     <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>RÃ©seaux et Protocoles </td>
+                        <td>mÃ©thodologie</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td> <button class="btn" type="button" onclick="toggle_text('m6');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m6">
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>
+                                       Dans ce module, nous couvrons les principaux aspects liÃ©s au routage dans les rÃ©seaux informatiques, afin de fournir une vision critique et globale du routage. Ce cours permettra Ã  l'Ã©tudiant de comprendre les dÃ©cisions techniques prises dans plusieurs propositions existantes et de dÃ©velopper sa propre capacitÃ© de conception de nouvelles approches de routage. Acquisition de connaissances 
+                                       nÃ©cessaires Ã  lâ€™installation, la configuration et le routage optimal dans les architectures rÃ©seaux.
+                                    </p>
+                                    <h2>Contenu du module:</h2>
+                                    <ul>
+                                      <li>Architecture des rÃ©seaux</li> 
+                                      <li>Protocoles TCP/IP</li> 
+                                      <li>Introduction aux principaux aspects liÃ©s au routage.</li> 
+                                      <li>Adressage et Routage Unicast</li> 
+                                      <li>Routage multicast</li> 
+                                      <li>Internet : adressage, subnetting et supernetting (CIDR). Routage intra et interdo- maine.</li>
+                                      <li>Les techniques modernes de routage.</li> 
+                                    </ul>
+                                    <h2>References:</h2>
+                                    <ol>
+                                     <li>  Toutain L. RÃ©seaux locaux et Internet : des protocoles Ã  lâ€™interconnexion. HermÃ¨s, 2003</li>
+                                     <li>Benslimane A. Multicast multimÃ©dia sur Internet. HermÃ¨s, 2005</li>  
+                                      <li>Welzl M. Network congestion control: Managing Internet traffic. Wiley, 2005</li> 
+                                     <li> Andrew Tanenbaum, "RÃ©seaux", Pearson Education.</li> 
+                                    </ol> 
+                              </div> </td>
+                    </tr>
+                     <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>ANIN : Anglais pour l'informatique</td>
+                        <td>dÃ©couverte</td>
+                         <td>2</td>
+                            <td>2</td>
+                            <td> <button class="btn" type="button" onclick="toggle_text('m7');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m7">
+                 <h2>Objectifs de l'enseignement:</h2> <br>
+        
+                 <p>  approfondir les connaissances et facilite la communication et l'expression de l'etudiant en anglais</p>  
+                                  </p>
+                              </div> </td>
+                    </tr>
+                </table>
+            <!-- tableau descripteur du S2-->
+                <table >
+                        <thead><tr>
+                        <th>Module</th>
+                        <th>UnitÃ© d'enseignement</th>
+                        <th>Coefficient</th>
+                        <th>CrÃ©dit</th>
+                        <th>Contenu</th></tr>
+                    </thead>
+                     <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                             <td>Fouille de donnÃ¨es</td>
+                                <td>fondamentale</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td> <a href="#S1"><button class="btn" type="button" onclick="toggle_text('m8');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m8">
+                <h2>Objectifs de l'enseignement:</h2>
+                <p>
+                    apprendre Ã  crÃ©er des solutions d'analyse prÃ©dictive et dâ€™extraction des connaissances avec le datamining. Nous espÃ©rons que vous disposerez d'une expÃ©rience d'apprentissage enrichissante et stimulante.
+                </p>
+                <h2>Contenu du module:</h2>
+                <ul>
+               <li> Extraction de l'information :</li>
+            <li>recherche de motifs (Pattern Matching) ;</li>
+            <li> dÃ©couverte de motifs (Pattern Discovery) : algorithme Aprioriâ€¦</li>
+            <li> Apprentissage artificiel :</li>
+            <li>classification, rÃ©gression ;</li>
+            <li>mÃ©thodes Ã  noyaux ;</li>
+            <li>machine Ã  vecteurs de support (SVM) ;</li>
+            <li>noyaux rationnels ;</li>
+            <li>infÃ©rence grammaticale.</li>
+            </ul>
+                                  </div> </td>
+                        </tr>
+                         <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                             <td>ThÃ¨orie des jeux</td>
+                             <td>fondamentale</td>
+                             <td>4.5</td>
+                                <td>3</td>
+                                <td><a href="#S1"><button class="btn" type="button" onclick="toggle_text('m9');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m9">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                                        <p>
+                                            apprendre Ã  crÃ©er des solutions d'analyse prÃ©dictive et dâ€™extraction des connaissances avec le datamining. Nous espÃ©rons que vous disposerez d'une expÃ©rience d'apprentissage enrichissante et stimulante.
+                                        </p>
+                                        <h2>Contenu du module:</h2>
+                                        <ul>
+                                       <li> Jeux sous forme extensive et jeux sous forme stratÃ©gique.</li>
+                                    <li>Graphe associÃ© Ã  un jeu. Arbre de jeu.</li>
+                                    <li>Notions de stratÃ©gie et de stratÃ©gie gagnante.</li>
+                                    <li> Recherche des stratÃ©gies gagnantes dans un arbre de jeu : algorithmes Minimax, Alpha-BÃªta et SSS*.</li>
+                                    <li>Recherche des stratÃ©gies gagnantes dans un graphe associÃ© Ã  un jeu : notions de noyau dâ€™un graphe et de fonction de Grundy.</li>
+                                    <li>Jeux de Nim Ã  un ou plusieurs tas.</li>
+                                    <li>ThÃ©orÃ¨me de Grundy.</li>
+                                    <li>Recherches heuristiques : algorithme A*.</li>
+                                    <li>Implantations des jeux de stratÃ©gie : Jeux de Nim, AwalÃ©, Othelloâ€¦</li>
+                                    </ul>   
+                                  </div> </td>
+                        </tr>
+                         <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                             <td>   Programmation rÃ¨seaux</td>
+                             <td>fondamentale</td>
+                             <td>4</td>
+                                <td>4</td>
+                                <td><a href="#S1"><button class="btn" type="button" onclick="toggle_text('m10');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m10">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                                        <p>
+                                            apprendre Ã  constituer un reseaux, toute en tenant compte des differentes couches reseau et leurs contenus
+                                        </p>
+                                        <h2>Contenu du module:</h2>
+                                        <ul>
+                                            
+                                       <li> Introduction : objectif des rÃ©seaux, types de rÃ©seaux et topologie, les couches OSI et le modÃ¨le TCP/IP, encapsulation et dÃ©multiplexage.</li>
+                                    <li>La couche application : la notion de service, quelques services de base.</li>
+                                    <li>La couche transport : la communication par sockets, fonctionnement gÃ©nÃ©ral d'une application rÃ©seau, crÃ©ation, nommage et suppression d'une socket, la communication par datagramme, le mode connectÃ©.</li>
+                                    <li> Recherche des stratÃ©gies gagnantes dans un arbre de jeu : algorithmes Minimax, Alpha-BÃªta et SSS*.</li>
+                                    <li>Les protocoles de la couche transport : le protocole TCP, le protocole UDP.</li>
+                                    <li>La couche rÃ©seau : le routage.</li>
+                                    </ul>
+                                  </div></td>
+                        </tr>
+                         <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                        <td>Conception et programmation des jeux video</td>
+                        <td>fondamentale</td>
+                             <td>4</td>
+                                <td>4</td>
+                                <td><a href="#S1"><button class="btn" type="button" onclick="toggle_text('m11');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m11">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                                        <p>
+                                            apprendre Ã  crÃ©er des solutions d'analyse prÃ©dictive et dâ€™extraction des connaissances avec le datamining. Nous espÃ©rons que vous disposerez d'une expÃ©rience d'apprentissage enrichissante et stimulante.
+                                        </p>
+                                        <h2>Contenu du module:</h2>
+                                        <ul>
+                                            
+                                       <li> Introduction : objectif des rÃ©seaux, types de rÃ©seaux et topologie, les couches OSI et le modÃ¨le TCP/IP, encapsulation et dÃ©multiplexage.</li>
+                                    <li>La couche application : la notion de service, quelques services de base.</li>
+                                    <li>La couche transport : la communication par sockets, fonctionnement gÃ©nÃ©ral d'une application rÃ©seau, crÃ©ation, nommage et suppression d'une socket, la communication par datagramme, le mode connectÃ©.</li>
+                                    <li> Recherche des stratÃ©gies gagnantes dans un arbre de jeu : algorithmes Minimax, Alpha-BÃªta et SSS*.</li>
+                                    <li>Les protocoles de la couche transport : le protocole TCP, le protocole UDP.</li>
+                                    <li>La couche rÃ©seau : le routage.</li>
+                                    </ul>
+                                  </div> </td>
+                        </tr>
+                         <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                            <td>Analyse de donÃ¨es</td>
+                            <td>mÃ©thodologie</td>
+                             <td>4</td>
+                                <td>4</td>
+                                <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m12');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m12">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                <p>
+                    Lâ€™utilisation de lâ€™analyse de donnÃ©es sâ€™Ã©tend Ã  des domaines trÃ¨s vastes, dont la psychologie, la sociologie, la mÃ©decine; reconnaissance de formes, data mining, prÃ©diction, marketing, bio statistique, etc.
+                </p>
+                <h2>Contenu du module:</h2>
+                <ul>
+
+               <li> Rappels MathÃ©matiques</li>
+            <li>Analyse en composantes principales</li>
+            <li>Analyse factorielle des correspondances</li>
+            <li> RÃ©gression simple et multiple</li>
+            </ul>   
+                                  </div></td>
+                        </tr>
+                         <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                            <td>Compilation</td>
+                            <td>mÃ©thodologie</td>
+                             <td>4</td>
+                                <td>4</td>
+                                <td><a href="#S1"><button class="btn" type="button" onclick="toggle_text('m13');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS--->
+                                  <div id="m13">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                                        <p>Le cours de compilation de Master 1Ã¨re annÃ©e permet :</p>
+                                        <ul>
+                                          <li>d'approfondir les notions supposÃ©es Ã©tudiÃ©es en Licence, tant en ce qui concerne l'analyse lexicale, syntaxique, que le typage.</li>
+                                          <li> de se concentrer sur les parties propres dâ€™un compilateur. Les transformations de programmes optimisantes, leurs conditions d'application et l'analyse statique des programmes y sont Ã©galement Ã©tudiÃ©es</li>
+                                        </ul>
+                                        <h2>Contenu du module:</h2> 
+                                        <ul>
+                                         <li> Rappels sur lâ€™analyse lexicale.</li>
+                                         <li>Rappels sur lâ€™analyse syntaxique.</li>
+                                         <li>Analyse sÃ©mantique, portÃ©e, tables des symboles.</li>
+                                         <li>Allocation - Substitution</li>
+                                         <li>Environnement dâ€™exÃ©cution.</li>
+                                         <li>Optimisation de code</li>
+                                         <li>GÃ©nÃ©ration de code.</li>
+                                        </ul>
+                                        <h2>References:</h2>
+                                        <p> Aho A. Ullman J.D., Principes des Compilateur, 1986 Edison Andrew w. appel, Medern Copiler Implementation in ML, Combridge Universty Press 1998</p>
+                                  </div></td>
+                        </tr>
+                         <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                            <td> Anglais</td>
+                            <td>mÃ©thodologie</td>
+                             <td>3</td>
+                                <td>3</td>
+                                <td><a href="#S1"><button class="btn" type="button" onclick="toggle_text('m14');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m14">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                                        <p>  approfondir les connaissances et facilite la communication et l'expression de l'etudiant en anglais</p>  
+                                  </div></td>
+                        </tr>
+                    </table>
+                <!-- tableau descripteur du S3-->
+                <table  >
+                        <thead><tr>
+                        <th>Module</th>
+                        <th>UnitÃ© d'enseignement</th>
+                        <th>Coefficient</th>
+                        <th>CrÃ©dit</th>
+                        <th>Contenu</th></tr>
+                    </thead>
+                     <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                             <td>SynthÃ¨se d'images</td>
+                                <td>fondamentale</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td><a href="#S1"><button class="btn" type="button" onclick="toggle_text('m15');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m15">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                                        <p>  utilisation dâ€™un ordinateur
+                                            pour gÃ©nÃ©rer des images.</p> 
+                                            
+                                            <h2>Contenu du module:</h2> 
+                                            <ul>
+                                             <li> Introduction</li>
+                                             <li>Â« Du Z-Buffer jusquâ€™au lancÃ© de rayons Â»</li>
+                                             <li>Divers
+                
+                                                -         Rappel de gÃ©omÃ©trie 2D/3D (dot product, vector product <br>
+                                                -         Surfaces paramÃ©triques  (Bezier, Splines, Nurbs) <br>
+                                                -         Prise en main dâ€™un environnement de dÃ©veloppement (visual 2005) <br>
+                                                -         Gestion dâ€™un projet de dÃ©veloppement <br>
+                                                -         Mise Ã  niveau en C++ <br>
+                                                -         Notion de programmation orientÃ©e objet (POO) <br>
+                                                -         Algorithmes et techniques diverses de la 3D</li>
+                                             <li> Logiciel MaYa 
+                                                -         DÃ©couverte de la chaÃ®ne de production des films dâ€™animation <br>
+                                                -         Introduction Ã  lâ€™interface du logiciel Maya <br>
+                                                -         Prise en main des Ã©tapes de modeling, anim, texturing & rendering <br>
+                                             </li>
+                                             
+                                            </ul>
+                                            <h2>References:</h2>
+                                            <ol>
+                                              <li> Curves and Surfaces for computer aided geometric design â€“ A practictal guide </li> 
+                                              <li>Collection Graphics Gems</li>                           
+                                            </ol>
+                                  </div> </td>
+                        </tr>
+                         <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                             <td>Gestion de projet</td>
+                             <td>fondamentale</td>
+                             <td>5</td>
+                                <td>5</td>
+                                <td><a href="#S1"><button class="btn" type="button" onclick="toggle_text('m16');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m16">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                                        <p>Câ€™est lâ€™ensemble des dÃ©cisions prise et interventions effectuÃ©es dans le but dâ€™assurer le succÃ¨s dâ€™un projet dans toutes les phases de son dÃ©roulement.</p>
+                                        <h2>Contenu du module:</h2>
+                                        <p>  DÃ©finir ce quâ€™est un projet <br>
+                                            DÃ©finir les composantes dâ€™un projet <br>
+                                            DÃ©finir les diffÃ©rentes phases dâ€™un projet <br>
+                                            DÃ©finir le cycle de gestion dâ€™un projet <br>
+                                            Avoir une connaissance des outils <br>
+                                            Projet dâ€™Etablissement Hospitalier (PEH) <br>
+                                            DÃ©finir ce quâ€™est un PEH <br>
+                                            DÃ©finir les composantes dâ€™un PEH <br>
+                                            ConnaÃ®tre la mÃ©thodologie dâ€™Ã©laboration</p>  
+                                  </div></td>
+                        </tr>
+                         <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                             <td>RÃ©alitÃ¨ virtuelle</td>
+                             <td>mÃ©thodologie</td>
+                             <td>4</td>
+                                <td>4</td>
+                                <td> <a href="#S1"><button class="btn" type="button" onclick="toggle_text('m17');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m17">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                                        <p>La formation en rÃ©alitÃ© virtuelle est la prochaine rÃ©volution majeure dans le monde de lâ€™apprentissage.Câ€™est souvent le seul moyen (la seule technologie) qui permet de reproduire fidÃ¨lement un environnement de travail et de placer le collaborateur en immersion totale.</p>
+                                  </div></td>
+                        </tr>
+                         <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                        <td>Visualisation de donnÃ¨es</td>
+                        <td>mÃ©thodologie</td>
+                             <td>3</td>
+                                <td>3</td>
+                                <td> <a href="#S1"><button class="btn" type="button" onclick="toggle_text('m18');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m18">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                                        <p>Nombreux sont les crÃ©ateurs de donnÃ©es brutes, câ€™est-Ã -dire de donnÃ©es qui nâ€™ont fait lâ€™objet dâ€™aucun traitement et qui, en lâ€™Ã©tat, ne sont pas lisibles par lâ€™utilisateur final. la data Vizualisation, parfois abrÃ©gÃ© Â« data viz Â», est une solution de visualisation de ces donnÃ©es. Plus simplement, la data visualization est lâ€™art ou la science de reprÃ©senter des donnÃ©es sous une forme visuellement
+                                             comprÃ©hensible, quâ€™il sâ€™agisse, sans exhaustivitÃ©, de tableaux, de graphiques de toutes sortes, de cartographies ou encore de chronologies.</p>
+                                  </div></td>
+                        </tr>
+                         <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                            <td>Traitement et analyse d'images et videos</td>
+                            <td>mÃ©thodologie</td>
+                             <td>3</td>
+                                <td>3</td>
+                                <td><a href="#S1"><button class="btn" type="button" onclick="toggle_text('m19');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m19">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                                        <p>Le traitement d'images est une discipline de l'informatique et des mathÃ©matiques appliquÃ©es qui Ã©tudie 
+                                            les images numÃ©riques et leurs transformations, dans le but d'amÃ©liorer leur qualitÃ© ou d'en extraire de l'information.
+                                            Il s'agit d'un sous-ensemble du traitement du signal dÃ©diÃ© aux images et aux donnÃ©es dÃ©rivÃ©es comme la vidÃ©o (par opposition aux 
+                                            parties du traitement du signal consacrÃ©es Ã  d'autres types de donnÃ©es : son et autres signaux monodimensionnels notamment), tout en opÃ©rant dans le domaine numÃ©rique (par opposition aux techniques analogiques de traitement du signal, comme la photographie ou la tÃ©lÃ©vision traditionnelles).</p>
+                                  </div></td>
+                        </tr>
+                         <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                        <tr>
+                            <td>Systeme d'exploitation mobiles</td>
+                            <td>mÃ©thodologie</td>
+                             <td>4</td>
+                                <td>4</td>
+                                <td><a href="#S1"><button class="btn" type="button" onclick="toggle_text('m20');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                                  <div id="m20">
+                                        <h2>Objectifs de l'enseignement:</h2>
+                                        <p>Approfondir les diffÃ©rents concepts utiles pour la conception dâ€™un systÃ¨me dâ€™exploitation ou la programmation systÃ¨me.
+                                            Recommandations : Il est conseillÃ© dâ€™utiliser un systÃ¨me dâ€™exploitation (UNIX par exemple) comme exemple en terme dâ€™outil pour chaque concept Ã©tudiÃ©. PrÃ©voir des TPs pour la mise en application des concepts Ã©tudiÃ©s.</p>
+                                         <h2>Contenu du module:</h2>
+                                         <ul>
+                                           <li>Chapitre 1: SYSTEMES DE FICHIERS</li> 
+                                           <li>Chapitre 2: PROTECTION ET SECURITE</li> 
+                                           <li>Chapitre 3 : SYNCHRONISATION DES PROCESSUS</li> 
+                                           <li>Chapitre 4 : COMMUNICATION ENTRE PROCESSUS</li> 
+                                           <li>Chapitre 5 : INTERBLOCAGE</li> 
+                                         </ul>
+                                         <h2>References:</h2>
+                                         <ol>
+                                          <li>M. J. Bach, traduit par G.Fellah, â€˜â€™Conception du SystÃ¨me UNIX,â€™â€™ Masson et Prentice Hall, 1990.</li>  
+                                           <li>J. Beauquier, B. Berard â€˜â€™SystÃ¨mes dâ€™exploitation : Concepts et algorithmesâ€™â€™ McGraw Hill, 1990.</li> 
+                                          <li>Crocus, â€˜â€™ SystÃ¨mes dâ€™exploitation des ordinateurs,â€™â€™ Dunod informatique 1975.</li>  
+                                           <li>N. B. Fontaine, P. Hammes, â€˜â€™UNIX SystÃ¨me V: SystÃ¨me et environnement, Masson 1989.</li> 
+                                           <li>S. Krakowiak, â€˜â€™Principes des systÃ¨mes d'exploitation des ordinateurs,â€™â€™ Dunod informatique 1987.</li> 
+                                           <li>J-L.Peterson, F.Silbershartz â€˜â€™Operating Systems Concepts,â€™â€™Addison-Wesly Publishing Company,Inc, 1983.</li> 
+                                           <li>A. Silberschatz, P. B. Galvin â€˜â€™ Principes des systÃ¨mes dâ€™exploitation,â€™â€™ 4 e Edition, Addison Wesley, 1994.</li> 
+                                           <li> A. S. Tanenbaum, â€˜â€™ Modern Operating Systems, â€™â€™ Second Edition Prentice Hall.</li>
+                                         </ol> 
+                                  </div> </td>
+                        </tr>
+                   
+                    </table>
+  
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <!-- un div et des les liens a pour faire la navigation des tableaux-->
+<div class="slider-nav">
+    <a href="#S1">S1</a>
+    <a href="#S2">S2</a>
+    <a href="#S3">S3</a>
+    
+  </div>
+<!-- un div contenant un titre H3 et un paragraphe descripteur du semestre 4-->
+                <div id="S4"><h4>Semestre 4</h4>
+                    <p class="alinea">Stage en entreprise sanctionnÃ© par un mÃ©moire et une soutenance.</p>
+                  </div>
+            
+                  <br>               
+
+            </div></section>
+<!------ le footer ---------->
+    <footer class="footer-bas" id="contacts">
+
+        <div class="footer-gauche"> <!------  l'ecriture a gauche dans le footer ---------->
+
+            <h3>Master<span>Study</span></h3>
+
+            <p class="footer-liens">
+                <a href="index.html" class="link-1">HOME</a>
+                <a href="index.html">FONCTIONNEMENT</a>
+                <a href="index.html">Ã  PROPOS</a>
+                <a href="index.html">CHOIX</a>
+                <a href="#">CONTACT</a>
+            </p>
+
+            <p class="footer-name">MasterStudy Copyright Â© 2022 BOUADI Nassima SADI OUFELLA Ouiza ðŸ“– </p>
+        </div>
+
+        <div class="footer-centre"><!------  l'ecriture a centre dans le footer ---------->
+            <span class="contact"> Contactez Nous <br>
+            <br>
+            </span>
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>BP 32 Bab Ezzouar, 16111 - ALGER.</span> Houari boumdienne, ALGER</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p> +213 023934031</p>
+            </div>
+
+            <div>
+                <i class="fa fa fa-envelope"></i>
+                <p><a href="contact@usthb.dz">contact@usthb.dz</a></p>
+            </div>
+
+        </div>
+        <div class="footer-droit"><!------  l'ecriture a droite dans le footer ---------->
+
+            <p class="footer-about">
+                <span>NOTRE BUT</span><br>
+                Vous Ãªtes sur la bonne adresse si vous hÃ¨sitez sur le choix de votre formation. MasterStudy est Ã  votre service pour vous fournir les informations nÃ¨cessaire sur toutes formations disponibles.
+            </p>
+
+            <div class="footer-icons">
+
+                <span class="col-lg-3 item social"><a href="https://www.facebook.com/groups/999017747488761"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/?lang=fr"><i class="icon ion-social-twitter"></i></a><a href="https://accounts.snapchat.com/accounts/login?continue=%2Faccounts%2Fwelcome"><i class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com/faculte_d_informatique/?hl=fr"><i class="icon ion-social-instagram"></i></a> <!-- les icones ramener du site font awesome ,chaque icone a un chemin de destination -->
+            </div>
+
+        </div>
+
+    </footer>            
+                
+</body>
+</html>
