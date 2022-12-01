@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="fr"><!--La langue francaise-->
+<head>
+    <meta charset="UTF-8"><!--un codage de caractÃ¨res informatiques-->
+    <link href="style.css" rel="stylesheet"> <!-- le liens vers notre pages css-->
+    <!------ les tag pour l'ajout des icones ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" >
+       <script src="https://kit.fontawesome.com/50149a0ab1.js" ></script>
+    <title>Resaux</title><!--Titre de notre page-->
+</head>
+<body>
+
+ <!-- une fonction JS pour afficher un text rn click sur un boutton-->
+ <script>
+  function toggle_text(id) {
+    var span = document.getElementById(id);
+    if(span.style.display == "none") {
+      span.style.display = "inline";
+    } else {
+      span.style.display = "none";
+    }
+  }
+  </script> <br>
+ <!-- Une section  qui possede une image et un titre h1 ecrit sur l'image-->
+   <section>
+        <img  src="http://telemondial.org/wp-content/uploads/2014/11/15581-network-cables-1920x1200-computer-wallpaper-1920x500.jpg" alt="" style="width: 100%;height: 300px; opacity: 0.6;margin-top: -20px;  position: absolute;">
+        <div style="z-index: 1;position: absolute; margin: 0 auto; top: 0%; left: 0;right: 0;">
+            <h1 class="bloc">RÃ©seau et tÃ©lÃ©communication Informatique</h1>
+        </div>
+</section>
+<!--La partie navigation  -->
+<!-- on possede plusieurs liens de navigation  "home" pour revenir a la page principale et le reste c'est la navigation interne-->
+    <nav class="navRSD"  >
+        <ul class="d">
+                <li class="titrenav">Page d'acceuil  :</li><br>
+                  <li><a  href="index.html">Home</a></li><br>
+                  <li class="titrenav">PrÃ©sentation du domaine :</li><br>
+                
+                <li><a  href="#Histoire">Histoire</a></li>
+                  <li><a  href="#definition">DÃ©finition</a></li>
+                   <li><a href="#Detail">Plus de dÃ©tails</a></li><br>
+                    <li class="titrenav">PrÃ©sentation de la formation :</li><br>
+                    <li class="dropdown">
+                    <a href="#programme" class="dropbtn">Programme</a>
+                    <div class="dropdown-content">
+    
+                        <a  href="#S1">S1</a>
+                        <a  href="#S2">S2</a>
+                        <a  href="#S3">S3</a>
+                        <a href="#S4">S4</a>
+    
+                    </div>
+                  </li>
+                 
+                  <li><a  href="#Contexte">Contexte et objectifs</a></li>
+                  <li><a href="#competences">CompÃ©tences visÃ©s</a></li>
+                </ul>
+            </nav>
+            <!--La partie des liens-->
+            <!-- on a deux titre h3  "lien" "UniversitÃ¨" qui possede des liens 'a' menant vers des sites internet descripteur-->
+           <div class="links">
+              <h3>liens</h3>
+              
+              <ul>
+                <li> <a href="https://fr.wikipedia.org/wiki/R%C3%A9seau_de_t%C3%A9l%C3%A9communications">Wikipedia</a> </li>
+                <li><a href="https://www.techno-science.net/definition/11697.html">Bibliographie</a></li>
+              </ul>
+              <img src="images/rsd1.jpg" alt="" style="height: 100px; width: 100px;">
+          </div>
+          <div class="links2">
+            <h3>UniversitÃ¨s</h3>
+            
+            <ul>
+              <li> <a href="https://www.univ-reims.fr/formation/catalogue-de-formation/master-reseaux-et-telecommunication,23515,38949.html?args=R9qFsCnMmKDtxCa17YTDkHVqaqbfYRXwwTnCVt2witCDUIiVoUdkeMDp%2AXGEGm2SMIhvMbuZ3_kOrRxvJlk6dOorIryuNioRCyFFyPAvhl9tCdwYdtHRrwAvNC1tDg_H&formation_id=204">UniversitÃ¨ REIMS</a> </li>
+              <li><a href="https://www.univ-lille.fr/formations/fr-00002030">UniversitÃ¨ LILLE</a></li>
+              <li><a href="https://www.usthb.dz/fr/page/138">UniversitÃ¨ USTHB</a></li>
+            </ul>
+            <img src="images/rsd2.jpg" alt="">
+        </div>
+  
+        <!-- on a une section "contenuMaster" qui possede differente information sur RSD-->
+        <section class="contenuMaster">
+          <br>
+          <!-- on a un titre H3 "histoire" qui possede un paragraphe p descripteur et une image img-->
+          <h3 id="Histoire">Histoire des rÃ¨seaux informatiques:</h3><blockquote>
+          <p class="alinea">Les premiÃ¨res expÃ©riences d'interconnexions de rÃ©seaux ont lieu en 1977 entre ARPANET, Packet Radio Net et SATNET. La connexion de nouveaux rÃ©seaux de par le monde va ensuite trÃ¨s vite : connexion du rÃ©seau acadÃ©mique europÃ©en en 1983, puis d'un rÃ©seau japonais, et d'un rÃ©seau britannique en 1984.<br>
+          L'histoire des rÃ©seaux informatiques et de l'Internet couvre pas seulement les dÃ©cennies de dÃ©veloppement informatique, mais le siÃ¨cle de la technologie de communication qui la prÃ©cÃ¨de. De petites racines thÃ©oriques , les rÃ©seaux informatiques ont grandi pour former une force dominante dans la communication et les mÃ©dias modernes .<br> Avant que les ordinateurs
+          Plusieurs inventions ont prÃ©cÃ©dÃ© l' avÃ¨nement des rÃ©seaux informatiques , et ouvert la voie Ã  leur succÃ¨s Ã©ventuel . Le tÃ©lÃ©phone d'Alexander Graham Bell , a dÃ©montrÃ© en 1876, a fourni les bases pour les connexions rÃ©seau , et les travaux de Thomas Edison l'Ã©lectricitÃ© Ã  la fin du 19Ã¨me siÃ¨cle nous a donnÃ© le cadre structurel de la technologie informatique avenir .Prenons un exemple du develloppement de l'internet a travers le temps:</p></blockquote>
+          <img src="images/histoireRSD.jpg" alt="" style="height: 500px;margin-left: 80px; width: 600px;">
+          <!-- on a un titre H3 "definition" qui possede 2 paragraphes p descripteur et une imgae img-->
+          <h3 id="definition">DÃ©finition</h3> <blockquote>
+        <p class="alinea"> Le secteur de l'Informatique et des tÃ©lÃ©communications est en perpÃ©tuelle Ã©volution et la maniÃ¨re de travailler et de fonctionner au niveau sociÃ©tal et industriel se meut avec une rapiditÃ© exponentielle. BasÃ© sur des E-services Ã  valeur ajoutÃ©e de plus en
+             plus Ã©laborÃ©s, il relie aussi bien des espaces virtuels que des objets connectÃ©s du monde rÃ©el.<br>
+              Les ingÃ©nieurs RSD doivent avoir d'une part une maÃ®trise technologique et d'autre part une aptitude Ã  
+              prendre en compte l'environnement Ã©conomique, social et humain afin d'assurer un Management du secteur 
+              des TÃ©lÃ©communications et des RÃ©seaux intÃ©grant les SystÃ¨mes d'Informations de l'Entreprise Ã©tendue.Neamoins pour plus d'information.<br>Autrement dit Dans les technologies de lâ€™information, un rÃ©seau est dÃ©fini par la mise en relation dâ€™au moins deux systÃ¨mes informatiques au moyen dâ€™un cÃ¢ble ou sans fil, par liaison radio.<br> Le rÃ©seau le plus basique comporte deux ordinateurs reliÃ©s par un cÃ¢ble. On parle aussi dans ce cas de rÃ©seau peer-to-peer (P2P) ou en franÃ§ais pair Ã  pair. Ce genre de rÃ©seau nâ€™a pas de hiÃ©rarchie : les deux participants sont au mÃªme niveau. Chaque ordinateur a accÃ¨s aux donnÃ©es de lâ€™autre et ils peuvent partager des ressources,
+               comme un disque de stockage, des programmes ou des pÃ©riphÃ©riques (imprimante, etc.).</p>
+              <p class="alinea">Les rÃ©seaux modernes sont un peu plus complexes en gÃ©nÃ©ral et comportent bien plus que deux ordinateurs. Pour les systÃ¨mes Ã  plus de dix participants, on utilise habituellement une configuration de type client/serveur.
+               Dans ce modÃ¨le, un ordinateur agissant comme point de commutation central (serveur) met ses ressources Ã  disposition des autres participants au rÃ©seau (clients). </p></blockquote>
+           <img src="https://www.acti-line.com/docs/architecture2.png" alt="image reseau" style="margin-left: 100px;" >    
+           <!-- on a un titre H3 "Comment fonctionne la tÃ©lÃ©communication? " qui possede une image img et 3 paragraphes p descripteurs du contenu-->
+    <h3 id="Detail">Comment fonctionne la tÃ©lÃ©communication?</h3>
+    <img src="images/resnew1.png" title="TÃ©lÃ©graphe optique. CrÃ©dits : MusÃ©e de la Poste - Paris" style="float:right; margin-right: 5px;">
+    <p>Cette question se pose depuis lâ€™AntiquitÃ©. Le terme Â« tÃ©lÃ©communications Â» se rÃ©fÃ¨re Ã  la transmission, lâ€™Ã©mission ou la rÃ©ception Ã  distance de signaux diffusant des informations de toute nature : texte, image, son etc. Par opposition aux messagers et postiers, les tÃ©lÃ©communications vÃ©hiculent les messages immatÃ©riels.</p>
+    <p>CÃ¢bles et ondes radio transportent aujourdâ€™hui tout type dâ€™informations dâ€™un bout Ã  lâ€™autre de la planÃ¨te grÃ¢ce Ã  de nombreux rÃ©seaux qui sâ€™organisent, se dÃ©veloppent et se combinent presque Ã  lâ€™infini.
+Mais avant dâ€™en arriver lÃ , nos aÃ¯eux ont dÃ» rivaliser dâ€™ingÃ©niositÃ© pour transmettre leurs messages.</p>
+
+<p>Les premiers signaux lumineux, la fumÃ©e, les cris sont ainsi les ancÃªtres des tÃ©lÃ©graphe, tÃ©lÃ©phone, radio, tÃ©lÃ©vision, puis tÃ©lÃ©copie et Internet, grÃ¢ce aux progrÃ¨s fulgurants quâ€™ont permis lâ€™Ã©lectricitÃ© et plus tard lâ€™informatique.
+RÃ©sultats dâ€™une technologie de plus en plus sophistiquÃ©e, ces outils devenus indispensables sont Ã©galement lâ€™aboutissement dâ€™une aventure humaine ancienne.</p>
+ <!-- On a un titre H3 "DÃ©coupage gÃ©ographique et fonctionnel des rÃ©seaux" qui possede une image img , des definitions ainsi des listes ul--> 
+<h3>DÃ©coupage gÃ©ographique et fonctionnel des rÃ©seaux</h3>
+ <img src="images/resnew2.png" title="Lien entre un rÃ©seau personnel et Internet" style="width: 250px; float:right;">
+ <dl>
+ <dt>DÃ©coupage gÃ©ographique</dt>
+ <dd>Les rÃ©seaux informatiques sont classÃ©s suivant leur portÃ©e :
+<ul>
+  <li>le bus informatique : rÃ©seau dans la carte mÃ¨re.</li>
+  <li>le rÃ©seau personnel (PAN) relie des appareils Ã©lectroniques personnels.</li>
+  <li>le rÃ©seau local (LAN) relie les ordinateurs ou postes tÃ©lÃ©phoniques situÃ©s dans la mÃªme piÃ¨ce ou dans le mÃªme bÃ¢timent.</li>
+  <li>le rÃ©seau local (WLAN) est un rÃ©seau LAN utilisant la technologie WIFI.</li>
+  <li>le rÃ©seau mÃ©tropolitain (MAN) est un rÃ©seau Ã  l'Ã©chelle d'une ville</li>
+  <li>le Â« rural area network Â» (RAN) est un rÃ©seau de tÃ©lÃ©communications, en gÃ©nÃ©ral sans fil, installÃ© par des utilisateurs d'Internet en zone rurale.</li>
+  <li>le rÃ©seau Ã©tendu (WAN) est un rÃ©seau Ã  grande Ã©chelle qui relie plusieurs sites ou des ordinateurs du monde entier.</li>
+</ul>
+ </dd></dl>
+ <dl>
+<dt>DÃ©coupage fonctionnel</dt>
+<dd>Un rÃ©seau peut Ãªtre classÃ© en fonction de son utilisation et des services qu'il offre. Ce dÃ©coupage recoupe Ã©galement la notion d'Ã©chelle. Ainsi, pour les rÃ©seaux utilisant les technologies Internet (famille des protocoles TCP/IP), la nomenclature est la suivante :
+<ul>
+  <li>Intranet : le rÃ©seau interne d'une entitÃ© organisationnelle</li>
+  <li>Extranet : le rÃ©seau externe d'une entitÃ© organisationnelle</li>
+  <li>Internet : le rÃ©seau des rÃ©seaux interconnectÃ©s Ã  l'Ã©chelle de la planÃ¨te</li>
+</ul>
+</dd>
+</dl>
+<!--on a un titre h3 "Importance des rÃ©seaux informatiques" qui possede 2 paragraphes descripteurs ainsi qu'une liste ul-->
+   <h3>Importance des rÃ©seaux informatiques :</h3>
+   <p>Dans le monde des technologies de lâ€™information (TI), lâ€™information est la pierre angulaire dâ€™une communication efficace. La communication est un moyen qui nous aide Ã  conduire nos opÃ©rations professionnelles et personnelles quotidiennes. OÃ¹ les rÃ©seaux informatiques servent de base Ã  tout en tant que solutions informatiques les meilleures et les plus importantes.</p>
+   <p>Vous trouverez ci-dessous une liste de points que nous faisons Ã  lâ€™aide de rÃ©seaux informatiques, ou de choses dont nous bÃ©nÃ©ficions Ã  lâ€™aide de rÃ©seaux informatiques ou qui sont devenus possibles ou efficaces grÃ¢ce au rÃ©seau informatique.</p>
+   <ul>
+     <li>Fournit le meilleur moyen de communication dâ€™entreprise.</li>
+     <li>Rationalisez la communication.</li>
+     <li>Partage des ressources rentable.</li>
+     <li>AmÃ©lioration de lâ€™efficacitÃ© et du volume de stockage</li>
+     <li>Permet le partage de fichiers.</li>
+     <li>Serveur Media Center</li>
+     <li>Surmonter la sÃ©paration gÃ©ographique.</li>
+     <li>Optimisez la commoditÃ© et la flexibilitÃ©.</li>
+   </ul>
+   <!--on a un titre H3 "Exemples de rÃ©seaux de tÃ©lÃ©communications" qui possede une liste ul-->
+      <h3>Exemples de rÃ©seaux de tÃ©lÃ©communications :</h3>
+      <ul>
+      <li>rÃ©seau de tÃ©lÃ©vision</li>
+      <li>rÃ©seau informatique</li>
+      <li>rÃ©seau de tÃ©lÃ©phonie mobile</li>
+      <li>rÃ©seau tÃ©lÃ©phonique commutÃ© </li>
+      <li>rÃ©seau numÃ©rique Ã  intÃ©gration de services (RNIS)</li>
+      <li>RÃ©seau FTTH (fibre optique jusqu'au domicile)</li>
+      <li>le rÃ©seau de tÃ©lÃ©phonie mobile public terrestre </li>
+      <li>le rÃ©seau Antares de la sÃ©curitÃ© civile franÃ§aise</li>
+      <li>le rÃ©seau aÃ©ronautique ACARS</li>
+      </ul>
+      <!-- on a un titre H3 "Pourquoi faire une formation en rÃ©seau tÃ©lÃ©communication" qui possede 2 paragraphes p descripteurs du contenu-->
+      <h3>Pourquoi faire une formation en rÃ©seau tÃ©lÃ©communication  ?</h3>
+      <p class="alinea">Ã€ lâ€™Ã¨re du numÃ©rique, les professionnels en rÃ©seau et tÃ©lÃ©communication sont trÃ¨s recherchÃ©s. Ils constituent des acteurs clÃ©s des sociÃ©tÃ©s. En effet, les ingÃ©nieurs et les techniciens rÃ©seau tÃ©lÃ©com sont sollicitÃ©s pour accompagner les entreprises dans leur mutation technologique.<br> Le secteur du rÃ©seau tÃ©lÃ©com ne cesse dâ€™Ã©voluer. Les sociÃ©tÃ©s de services sâ€™investissent pour fidÃ©liser et sÃ©duire les professionnels en rÃ©seau tÃ©lÃ©com. Elles mettent tout en Å“uvre pour les repÃ©rer. Concernant ce cursus, plusieurs opportunitÃ©s sont Ã  saisir.</p>
+      <p>En effet, grÃ¢ce Ã  lâ€™envol du haut dÃ©bit et du dÃ©veloppement de la fibre optique, les besoins en recrutement en matiÃ¨re de rÃ©seau tÃ©lÃ©com sont trÃ¨s importants. Les offres dâ€™emploi concernant le domaine sont multiples.</p>
+      <!-- on a un titre H3 "Contexte et Objectifs de la formation" qui contient un paragraphe p descripteur ainsi qu'une liste ul-->  
+      <h3 id="Contexte">Contexte et Objectifs de la formation</h3><blockquote>
+         <p class="alinea">
+            La quasiÂ­totalitÃ© des applications et des systÃ¨mes informatiques dâ€™aujourdâ€™hui sont formÃ©s de sites gÃ©ographiquement dispersÃ©s, partageant des donnÃ©es et coopÃ©rant Ã  offrir des services. Lâ€™infrastructure de base de ces systÃ¨mes est gÃ©nÃ©ralement constituÃ©e dâ€™un ou plusieurs rÃ©seaux dâ€™ordinateurs (sites) filaires et/ou sans fil voire dâ€™Internet, grÃ¢ce au dÃ©veloppement de la tÃ©lÃ©phonie et de lâ€™informatique grand public.Cependant, avec ce dÃ©veloppement, la mise en Å“uvre dâ€™applications distribuÃ©es devient un sujet complexe.<br> Lâ€™objectif de ce Master est de former des informaticiens de haut niveau, capables de:
+        </p>
+        <ul>
+         <li>Effectuer des travaux de recherche pointus et suivre lâ€™Ã©volution technologique dans un domaine en plein essor.</li>
+         <li>Planifier, dimensionner, dÃ©ployer et administrer des rÃ©seaux dâ€™entreprise et les applications sousÂ­jacentes</li></ul></blockquote>
+         <!-- on a un titre H3"CompÃ©tences visÃ©s" qui possede un paragraphe descripteur ainsi qu'une liste ul -->
+        
+          <h3 id="competences">CompÃ©tences visÃ©s</h3> <blockquote>
+           <p class="alinea"> Ce parcours comporte des modules de systÃ¨mes et rÃ©seaux approfondis en vue dâ€™une spÃ©cialisation en programmation et administration de systÃ¨mes et ingÃ©nierie des rÃ©seaux. La formation proposÃ©e de Master en Â« RÃ©seaux et SystÃ¨mes DistribuÃ©s Â» est une formation Ã  objectif de double compÃ©tence :</p><br>
+           <ul>
+        <li>
+        Les responsables sÃ©curitÃ© : ils connaissent les concepts de la sÃ©curitÃ©, ont une bonne connaissance en informatique.</li>
+        <li>permettre aux Ã©tudiants dâ€™intÃ©grer le secteur professionnel socioÂ­Ã©conomique</li>
+        <li>prodiguer aux Ã©tudiants les connaissances leur permettant de poursuivre des Ã©tudes Doctorales.</li>
+        </ul>
+      <p>
+        Câ€™est la raison pour laquelle : Dâ€™une part, la formation sâ€™est concentrÃ©e sur des cours fondamentaux avec un souci dâ€™Ã©quilibre entre les TD et les TP Dâ€™autre part, des modules Ã  option (deux modules au choix parmi plusieurs) sont orientÃ©s sur les aspects de recherche pour initier les Ã©tudiants aux thÃ¨mes de recherche en cours.
+      </p>  </blockquote>
+
+        <br>
+        <!-- on a un titre H3 "Programme de la formation en rÃ¨seaux et tÃ¨lÃ¨comunication" qui possede 2 paragraphes descripteurs un text important ecrit dans une balise Strong ainsi que plusieurs bloc de div-->
+            <h3 id="programme">Programme de la formation en rÃ¨seaux et tÃ¨lÃ¨comunication</h3>
+            <p class="alinea">Lâ€™enseignement est dispensÃ© de cours magistraux ( 483 h), de travaux dirigÃ©s et de travaux pratiques (525h).<br> Lâ€™horaire moyen hebdomadaire est de 24 heures,la prÃ©sence est obligatoire et contrÃ´lÃ©e. Les tableaux ci-dessous prÃ©sentent les diffÃ©rents modules enseignÃ©s:  </p>
+            <p class="alinea"><b>Indication: </b>
+<strong style="font-size: 12px;">Pour afficher la dÃ©scription, veuillez cliquer sur le bouton <em style="color:red; ">'Afficher'</em> et pour refermer la fenÃªtre, veuillez recliquer sur <em style="color:red; ">le mÃªme bouton</em>.</strong></p>
+            <div class="slider"> <!--Pour faire l'effet de slides entre les 3 tableaux--> 
+  <div class="slider-viewport">
+    <div id="S1">
+      <div id="S2">
+        <div id="S3">
+          
+              <div class="slider-content">
+                <!-- on a un Tableau qui contient plusieur lignes Tr ainsi que des colonnes td-->
+                <table>
+                    <thead>  <!--la partie head du tableau-->
+                      <tr><th>Module</th>
+                    <th>UnitÃ© d'enseignement</th>
+                    <th>Coefficient</th>
+                    <th>CrÃ©dit</th>
+                    <th>Contenu</th></tr>
+                </thead>
+                <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>Algorithmique AvancÃ©e et ComplexitÃ©</td>
+                            <td>fondamentale</td>
+                            <td>5</td>
+                            <td>3</td>
+                           <td > <button class="btn" type="button" onclick="toggle_text('m1');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS--->
+                              <div id="m1">
+
+                                 
+                                      <h2>Objectifs de l'enseignement:</h2>
+                                      <p>Ce module permet dâ€™acquÃ©rir les notions nÃ©cessaires pour : - analyser et classer les problÃ¨mes de diffÃ©rents domaines - construire la ou les solutions - Ã©valuer les diffÃ©rentes solutions en terme de calcul de complexitÃ© - Choisir la meilleure solution Ces notions seront vues Ã  travers lâ€™Ã©tude de problÃ¨mes pris dans diffÃ©rents domaines de lâ€™informatique tels que : Les rÃ©seaux, les bases de donnÃ©es, Algorithmique du texte ...etc.</p>
+                                      <h2>Contenu du module:</h2>
+                                      <ul>
+                                        <li>Chapitre 1: Les bases de lâ€™analyse algorithmique</li> 
+                                        <li>Chapitre 2: StratÃ©gies de rÃ©solution de problÃ¨mes</li> 
+                                        <li>Chapitre 3 : Les classes de problÃ¨mes </li> 
+                                        <li>Chapitre 4 : Analyse dâ€™algorithmes de tri</li> 
+                                        <li>Chapitre 5 : Algorithmique des arbres</li> <li>Chapitre 6 : Algorithmique des graphes </li>
+                                        <li>Chapitre 7 : IAlgorithmes de hachage et texte</li>
+                                      </ul>
+                                      <h2>References:</h2>
+                                      <ol>
+                                          <li>Introduction to algorithms. T. Cormen, C. Leiserson, R. Rivest. MIT Press, 2nd edition 2000.</li>
+                                          <li>Algorithms and theory of computation handbook, edited by M. Atallah, CRC Press, Purdue University, 1999.</li>
+                                          <li>Analysis of algorithms: an active learning approach. J.J.McConnell. Jones and Barlett Publishers, 2001.</li>
+                                          <li>Computational complexity. C.H. Papadimitriou, Addison Wesley, 1994.</li>
+                                      </ol>
+                                 
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>ModÃ©lisation et Evaluation de Performances des SystÃ¨mes</td>
+                         <td>fondamentale</td>
+                         <td>4</td>
+                            <td>3</td>
+                            <td> <button class="btn" type="button" onclick="toggle_text('m2');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS--->
+                              <div id="m2">
+                               
+         <h2>Objectifs de l'enseignement:</h2>
+         L'objectif de ce module est de sensibiliser les Ã©tudiants aux problÃ¨mes de modÃ©lisation et d'Ã©valuation des performances des systÃ¨mes rÃ©els tels les systÃ¨mes informatiques, les rÃ©seaux de communication et les systÃ¨mes de production. Il se propose de rÃ©pondre aux questions suivantes :
+         <ul>
+       <li>Pourquoi Ã©valuer les performances d'un systÃ¨me ?</li>  
+        <li>Dans quels cas cela est-il nÃ©cessaire ?</li> 
+        <li>Comment modÃ©liser un systÃ¨me ?</li> 
+        <li>Quel type de modÃ¨le utiliser ?</li> 
+        <li>Comment analyser le modÃ¨le ?</li> </ul>
+        <h2>Contenu du module:</h2>
+         <ol>
+           <li>ProblÃ©matique de l'Ã©valuation de performances.</li> 
+           <li>ChaÃ®nes de Markov.</li> 
+           <li>Files dâ€Ÿattente.</li> 
+           <li>Les rÃ©seaux de Petri simples (Analyse structurelle, comportementale, invariants).</li> 
+           <li>Les rÃ©seaux de Petri stochastiques, Analyse des performances.</li> 
+         </ol>
+         <h2>References</h2>
+         <ol>
+             <li>B. Baynat, ThÃ©orie des files dâ€™attente, Hermes 2000  </li>
+            <li>G. Vidal-Naquet, A. Choquet-Geniet, RÃ©seaux de Petri et SystÃ¨mes ParallÃ¨les, Armon Colin 1992</li> 
+            <li>A. Choquet-Geniet, Les RÃ©seau de Petri, un outil de modelisation Dunod 2006</li> 
+         </ol> 
+                                 
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>Gestion de Projet de DÃ©veloppement de Logiciels     </td>
+                         <td>fondamentale</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td > <button class="btn" type="button" onclick="toggle_text('m3');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS--->
+                              <div id="m3">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+         <ul>
+             <li>Permettre Ã  lâ€™Ã©tudiant de comprendre lâ€™enjeu majeur de la gestion de projet.</li>
+            <li>Initier lâ€™Ã©tudiant au processus dâ€™organisation et de planification.</li> 
+            <li>Entrainer lâ€™Ã©tudiant Ã  lâ€™application de processus, mÃ©thodes et outils de planifica- tion.</li> 
+            <li>Initier lâ€™Ã©tudiant aux environnements de gestion de projet.</li> 
+         </ul>
+         <h2>Contenu du module:</h2>
+         <ol>
+         <li>  Introduction</li> 
+          <li>Les modÃ¨les de gestion de projet</li>  
+           <li>Les Ã©lÃ©ments de Gestion de projet</li> 
+           <li>Lâ€™organisation des Ã©quipes de programmation</li> 
+           <li>Les Ã©lÃ©ments de la planification</li> 
+           <li>Le processus de planification</li> 
+           <li>Estimation des charges, dÃ©lais et coÃ»t</li> 
+         </ol>
+         <h2>References</h2>
+         <ol>
+          <li> Principles of software engineering management by Tom GILB Edition Lavoisier.</li> 
+           <li>Software Engineering: A Practitioner's Approach by Roger S Pressman.</li> 
+           <li>Software Project Management in Practice by Pankaj Jalote.</li> 
+           <li>GÃ©nie logiciel: principes, mÃ©thodes et techniques by Alfred Strohmeier et Didier Buchs.</li> 
+         </ol> 
+                                 
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                    <td>Architecture et Administration de SGBD</td>
+                    <td>fondamentale</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td > <button class="btn" type="button" onclick="toggle_text('m4');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS--->
+                              <div id="m4">
+                                  
+                                   
+         <h2>Objectifs de l'enseignement:</h2>
+         <p>MaÃ®trise de lâ€™architecture des SGBD et lâ€™administration dâ€™une base de donnÃ©es aprÃ¨s sa crÃ©ation</p>
+        <h2>Contenu du module:</h2>
+        <ul>
+         <li>Chap1. Introduction : gÃ©nÃ©ralitÃ©s sur les SGBD : concepts et architecture</li>  
+         <li>Chap2. Les mÃ©ta DonnÃ©es : structure et gestion</li>  
+          <li>Chap3. Gestion des accÃ¨s concurrents : transactions et protocoles</li> 
+          <li>Chap4. SÃ©curitÃ© : gestion des reprises, nature des pannes, notion de journal, Sauvegarde et autorisation dâ€™accÃ¨s et droits dâ€™accÃ¨s</li> 
+        </ul>
+        <h2>References:</h2>
+        <ol>
+         <li>J. Date. Introduction aux bases de donnÃ©es. Thomason publishing France 6iÃ¨me Ã©dition. 1998</li>  
+         <li> C. Delobel et M. Adiba : bases de donnÃ©es et systÃ¨mes relationnels. Dunod 1982</li> 
+          <li> T. Connoly et Corolyn Begg. SystÃ¨mes de bases de donnÃ©es : approche pratique de concep- tion de lâ€™implÃ©mentation et de lâ€™administration. Eyrolles 2005</li>
+        </ol>  
+                                 
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>SystÃ¨mes dâ€™exploitation</td>
+                        <td>mÃ©thodologie</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td > <button class="btn" type="button" onclick="toggle_text('m5');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS--->
+                              <div id="m5">
+                                 
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>Approfondir les diffÃ©rents concepts utiles pour la conception dâ€™un systÃ¨me dâ€™exploitation ou la programmation systÃ¨me.
+                                        Recommandations : Il est conseillÃ© dâ€™utiliser un systÃ¨me dâ€™exploitation (UNIX par exemple) comme exemple en terme dâ€™outil pour chaque concept Ã©tudiÃ©. PrÃ©voir des TPs pour la mise en application des concepts Ã©tudiÃ©s.</p>
+                                     <h2>Contenu du module:</h2>
+                                     <ul>
+                                       <li>Chapitre 1: SYSTEMES DE FICHIERS</li> 
+                                       <li>Chapitre 2: PROTECTION ET SECURITE</li> 
+                                       <li>Chapitre 3 : SYNCHRONISATION DES PROCESSUS</li> 
+                                       <li>Chapitre 4 : COMMUNICATION ENTRE PROCESSUS</li> 
+                                       <li>Chapitre 5 : INTERBLOCAGE</li> 
+                                     </ul>
+                                     <h2>References:</h2>
+                                     <ol>
+                                      <li>M. J. Bach, traduit par G.Fellah, â€˜â€™Conception du SystÃ¨me UNIX,â€™â€™ Masson et Prentice Hall, 1990.</li>  
+                                       <li>J. Beauquier, B. Berard â€˜â€™SystÃ¨mes dâ€™exploitation : Concepts et algorithmesâ€™â€™ McGraw Hill, 1990.</li> 
+                                      <li>Crocus, â€˜â€™ SystÃ¨mes dâ€™exploitation des ordinateurs,â€™â€™ Dunod informatique 1975.</li>  
+                                       <li>N. B. Fontaine, P. Hammes, â€˜â€™UNIX SystÃ¨me V: SystÃ¨me et environnement, Masson 1989.</li> 
+                                       <li>S. Krakowiak, â€˜â€™Principes des systÃ¨mes d'exploitation des ordinateurs,â€™â€™ Dunod informatique 1987.</li> 
+                                       <li>J-L.Peterson, F.Silbershartz â€˜â€™Operating Systems Concepts,â€™â€™Addison-Wesly Publishing Company,Inc, 1983.</li> 
+                                       <li>A. Silberschatz, P. B. Galvin â€˜â€™ Principes des systÃ¨mes dâ€™exploitation,â€™â€™ 4 e Edition, Addison Wesley, 1994.</li> 
+                                       <li> A. S. Tanenbaum, â€˜â€™ Modern Operating Systems, â€™â€™ Second Edition Prentice Hall.</li>
+                                     </ol>  
+                                 
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>RÃ©seaux et Protocoles </td>
+                        <td>mÃ©thodologie</td>
+                         <td>5</td>
+                            <td>3</td>
+                            <td > <button class="btn" type="button" onclick="toggle_text('m6');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m6">
+                                 
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>
+                                       Dans ce module, nous couvrons les principaux aspects liÃ©s au routage dans les rÃ©seaux informatiques, afin de fournir une vision critique et globale du routage. Ce cours permettra Ã  l'Ã©tudiant de comprendre les dÃ©cisions techniques prises dans plusieurs propositions existantes et de dÃ©velopper sa propre capacitÃ© de conception de nouvelles approches de routage. Acquisition de connaissances 
+                                       nÃ©cessaires Ã  lâ€™installation, la configuration et le routage optimal dans les architectures rÃ©seaux.
+                                    </p>
+                                    <h2>Contenu du module:</h2>
+                                    <ul>
+                                      <li>Architecture des rÃ©seaux</li> 
+                                      <li>Protocoles TCP/IP</li> 
+                                      <li>Introduction aux principaux aspects liÃ©s au routage.</li> 
+                                      <li>Adressage et Routage Unicast</li> 
+                                      <li>Routage multicast</li> 
+                                      <li>Internet : adressage, subnetting et supernetting (CIDR). Routage intra et interdo- maine.</li>
+                                      <li>Les techniques modernes de routage.</li> 
+                                    </ul>
+                                    <h2>References:</h2>
+                                    <ol>
+                                     <li>  Toutain L. RÃ©seaux locaux et Internet : des protocoles Ã  lâ€™interconnexion. HermÃ¨s, 2003</li>
+                                     <li>Benslimane A. Multicast multimÃ©dia sur Internet. HermÃ¨s, 2005</li>  
+                                      <li>Welzl M. Network congestion control: Managing Internet traffic. Wiley, 2005</li> 
+                                     <li> Andrew Tanenbaum, "RÃ©seaux", Pearson Education.</li> 
+                                    </ol>
+                                 
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 1 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>ANIN : Anglais pour l'informatique</td>
+                        <td>dÃ©couverte</td>
+                         <td>2</td>
+                            <td>2</td>
+                            <td > <button class="btn" type="button" onclick="toggle_text('m7');" > Afficher </button><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m7">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2> <br>
+
+                                    <p>  approfondir les connaissances et facilite la communication et l'expression de l'etudiant en anglais</p>  
+                                  
+                              </div>
+                          </td>
+                    </tr>
+                </table>
+                <!--tableau descripteur du semestre 2-->
+            <table >
+                    <thead><tr><!--partie head du tableau-->
+                    <th>Module</th>
+                    <th>UnitÃ© d'enseignement</th>
+                    <th>Coefficient</th>
+                    <th>CrÃ©dit</th>
+                    <th>Contenu</th></tr>
+                </thead>
+                <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>Administration clients/serveurs</td>
+                            <td>fondamentale</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td ><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m8');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m8">
+                                 
+                                    <h2>Objectifs de l'enseignement:</h2>
+       <p>AcquÃ©rir les connaissances et les compÃ©tences nÃ©cessaires pour installer, configurer et administrer un rÃ©seau local basÃ© sur les services. 
+           Mise en place et administration des protocoles et services classiques de l'Internet sous Linux et Windows</p>
+           <h2>Contenu du module:</h2>
+           <ul>
+          <li> Rappel sur les services annuaires</li> 
+          <li> Architecture et communications Client/Serveur</li> 
+          <li> Applications Client/Serveur</li> 
+           </ul>
+         <h2>References:</h2>
+         Titre : TCP/IP - Administration de rÃ©seau <br>
+         Auteurs : Graig Hunt <br>
+         Editeur : O'Reilly, 2001 <br>
+        
+                                  
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>SystÃ¨mes multimÃ©dia</td>
+                         <td>fondamentale</td>
+                         <td>4.5</td>
+                            <td>3</td>
+                            <td > <a href="#S1"><button class="btn" type="button" onclick="toggle_text('m9');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m9">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>Donner Ã  l'Ã©tudiant les fondements de base de toutes les technologies du multimÃ©dia. L'ensemble des cours thÃ©oriques et pratiques permettra Ã 
+                                         l'Ã©tudiant de produire une application multimÃ©dia intÃ©grant l'image, la vidÃ©o, le son et le texte.</p>
+                                    <h2>Contenu du module:</h2>
+                                    <ul>
+                                      <li>Chapitre 1. Introduction</li> 
+                                      <li>Chapitre 2: L'imagerie numÃ©rique</li> 
+                                      <li>Chapitre 3: Le son en multimÃ©dia</li> 
+                                      <li>Chapitre 4: La vidÃ©o en multimÃ©dia</li> 
+                                      <li>Chapitre 5: Description et Edition de documents multimÃ©dia</li> 
+                                      <li>Chapitre 6: SpÃ©cification et synchronisation en multimÃ©dia</li>
+                                    </ul>
+                                    <h2>References:</h2>
+                                    <ol>
+                                     <li> Miano. Compressed Image File Formats. ACM Press (1999-2005)</li> 
+                                      <li> P. Symes. Digital Video Compression. Mc Graw-Hill (2001-2004)</li>
+                                      <li>N. Moreau. Techniques de compression des signaux, Masson, 1995</li> 
+                                    </ol> 
+                               
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>Algorithmique des systÃ¨mes et applications rÃ©partis</td>
+                         <td>fondamentale</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td > <a href="#S1"><button class="btn" type="button" onclick="toggle_text('m11');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m11">
+                                  
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>
+                                       A lâ€™issue de cet enseignement, lâ€™Ã©tudiant aura une connaissance des concepts,
+                                        techniques et mÃ©canismes qui permettent dâ€™apprÃ©hender les applications et systÃ¨mes rÃ©partis.
+                                    </p>
+                                    <h2>Contenu du module:</h2>
+                                    <ul>
+                                      <li>GÃ©nÃ©ralitÃ©s sur les systÃ¨mes rÃ©partis</li> 
+                                      <li>Exemples de construction dâ€™algorithmes rÃ©partis</li> 
+                                      <li>Ordonnancement des Ã©vÃ©nements dans un systÃ¨me rÃ©parti</li> 
+                                      <li>Calcul de lâ€™Ã©tat global dâ€™un systÃ¨me rÃ©parti</li>
+                                      <li> Algorithmes de contrÃ´le rÃ©parti : exclusion mutuelle, terminaison, Ã©lection.</li>
+                                    </ul>
+                                    <h2>References:</h2>
+                                    <ol>
+                                     <li> Elements of distributed computing, V. Garg, Wiley-Interscience, 2002.</li> 
+                                      <li> Distributed computing: fundamentals, Simulations and advanced topics, (2nd edition), At- tiya H., Welch J., Wiley-Interscience, 2004.</li>
+                                    </ol> 
+                                 
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                    <td>VÃ©rification formelle</td>
+                    <td>fondamentale</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td ><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m12');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m12">
+                                  
+                                    
+         <h2>Objectifs de l'enseignement:</h2>
+         
+         PrÃ©senter la vÃ©rification formelle de systÃ¨mes rÃ©partis Ã  l'aide des outils de base Ã  savoir les rÃ©seaux de Petri, les automates...
+         
+         <h2>References:</h2>
+         <ul>
+           <li>E.M.Clarcke, O.Grumberg, D.A.Peled, Model Checking 1999</li> 
+           <li>M.Diaz, VÃ©rification et mise en oeuvre des rÃ©seaux de Petri. Lavoisier 2003</li> 
+           <li> C.A.R Hoare, "communicating sequential processes" deux communications of the ACM vol 21 nÂ°8 1978 p 666 - 677</li>
+         </ul> 
+                                  
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>SÃ©curitÃ© informatique</td>
+                        <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td ><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m13');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m13">                 
+         <h2>Objectifs de l'enseignement:</h2>
+         <p>Permet aux Ã©tudiants dâ€ŸacquÃ©rir des compÃ©tences pour assurer le fonctionnement des systÃ¨mes informatiques.</p>
+         <h2>Contenu du module:</h2>
+         <ul>
+          <li>Objectifs et services de la sÃ©curitÃ© informatique.</li>  
+          <li>Menaces et VulnÃ©rabilitÃ©s dans les RÃ©seaux et SystÃ¨mes DistribuÃ©s.</li> 
+          <li>Gestion et Analyse du risque.</li> 
+          <li>Etude des diffÃ©rents types dâ€Ÿattaques.</li>
+          <li>Architectures de sÃ©curitÃ© (Firewalls).</li>
+          <li>Audit de vulnÃ©rabilitÃ©s (Scanner de vulnÃ©rabilitÃ©s).</li>
+          <li>SÃ©curitÃ© des protocoles de communication.</li>
+          <li>SystÃ¨mes de dÃ©tection dâ€Ÿintrusions.</li> 
+          <li>RÃ©seaux privÃ©s virtuels (VLAN, VPN).</li> 
+         </ul>
+         <h2>References:</h2>
+         <ol>
+           <li> Cryptography, Theory and Practice, Douglas Stinson, Chapman and Hall, 3Ã¨me Ã©dition, 2002: existe en traduction (Cryptographie, thÃ©orie et pratique).</li>
+           <li>The Handbook of Applied Cryptography, Menezes, van Oorschot, Vanstone, aussi sur le web: http://www.cacr.math.uwaterloo.ca/hac/</li>
+         </ol> 
+                                 
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>Techniques dâ€™optimisation pour les rÃ©seaux</td>
+                        <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td> <a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m14');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m14">
+         <h2>Objectifs de l'enseignement:</h2>
+         <p> apprendre differentes techniques et methodes d'optimisation d'un reseau quelconque.</p>
+
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 2 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td> Anglais</td>
+                        <td>mÃ©thodologie</td>
+                         <td>3</td>
+                            <td>3</td>
+                            <td ><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m15');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m15">
+                             
+                                     
+         <h2>Objectifs de l'enseignement:</h2>
+         <p>approfondir les connaissances et facilite la communication et l'expression de l'etudiant en anglais</p>
+                              </div>
+                          </td>
+                    </tr>
+                   
+                </table>
+           
+            <!-- tableau du Semestre3-->
+            <table>
+                    <thead><tr><!--partie head du tableau-->
+                    <th>Module</th>
+                    <th>UnitÃ© d'enseignement</th>
+                    <th>Coefficient</th>
+                    <th>CrÃ©dit</th>
+                    <th>Contenu</th></tr>
+                </thead>
+                <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>Construction dâ€™applications rÃ©parties</td>
+                            <td>fondamentale</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m16');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m16">
+         <h2>Objectifs de l'enseignement:</h2>
+         <p>Cet enseignement permet Ã  l'Ã©tudiant d'apprÃ©hender les problÃ¨mes de conception dâ€™applications 
+            rÃ©parties (concepts, architectures et exemples), de comprendre les solutions industrielles (Objets rÃ©partis en JAVA et CORBA, Internet et sockets Java, ...) et de maÃ®triser les principales plate-formes technologiques existantes.</p>
+         <h2>Contenu du module:</h2>
+         <ul>
+          <li>Internet et servlet</li>  
+          <li>Client/serveur et objets</li>  
+           <li>Java RMI</li> 
+           <li>CORBA</li> 
+           <li>Web Services</li> 
+           <li>Applications rÃ©parties et composants</li> 
+         </ul>
+         <h2>References:</h2>
+        <ol>
+           <li> Object vs. Component vs. Web Services (Object vs. Web Service War) : http://www.acm- queue.com/modules.php?name=Content&pa=showpage&pid=246</li>
+          <li> Fundamentals of RMI - Short Course : http://developer.java.sun.com/developer/onlineTraining/rmi/RMI.html</li>
+        </ol></div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>Calcul parallÃ¨le et grilles de calcul</td>
+                         <td>fondamentale</td>
+                         <td>5</td>
+                            <td>5</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m17');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m17">
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>Le but de ce cours est l'apprentissage des concepts fondamentaux de l'algorithmique parallÃ¨le. Ces concepts seront illustrÃ©s par des Ã©tudes de cas algorithmiques 
+                                        relatives Ã  des problÃ¨mes classiques issus particuliÃ¨rement des domaines numÃ©riques.</p>
+                                    <h2>Contenu du module:</h2>
+                                    <ul>
+                                      <li>Architectures parallÃ¨les.</li>  
+                                       <li>Environnement et outils de calcul parallÃ¨le</li> 
+                                       <li>Algorithmes parallÃ¨les.</li> 
+                                          <li>Performance du calcul parallÃ¨le.</li>  
+                                       <li>Grilles de calcul.</li> 
+                                    </ul>
+                                    <h2>References:</h2>
+                                    <ol>
+                                      <li> Gerard Tel, Introduction to Distributed Algorithms, Cambridge 2nd Edition 2000.</li> 
+                                      <li>Vipin Kumar et al., Introduction to Parallel Computing, Benjamins 1994.</li> 
+                                     </ol>
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                         <td>RÃ©seaux Mobiles</td>
+                         <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td ><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m18');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m18">
+                                <h2>Objectifs de l'enseignement:</h2>
+          <p>Cet enseignement couvre les problÃ¨mes liÃ©s Ã  la mobilitÃ© dans deux types dâ€™infrastructure : les rÃ©seaux locaux sans fil (Wireless Local Area Networks) et les rÃ©seaux cellulaires de type GSM/GPRS/ UMTS. On sâ€™intÃ©ressera particuliÃ¨rement aux protocoles 
+              de la couche MAC (mÃ©dium radio) et la gestion de la mobilitÃ© des terminaux</p>
+          <h2>Contenu du module:</h2>
+          <ul>
+           <li>RÃ©seaux locaux sans fil</li> 
+           <li>RÃ©seaux cellulaires</li> 
+           <li>GSM</li> 
+           <li>MobilitÃ© IP</li> 
+          </ul>
+          <h2>References:</h2>
+          <ol>
+           <li> Wireless and mobile network architecture, Yi-Bing Lin, Imrich Chlamtac, Wiley Com- puter Publishing, 2001.</li>
+           <li>RÃ©seaux de mobiles et sans fil, Khaldoun El Agha, Guy Pujolle, Gillaume Vivier, Ey- rolles 2001.</li>
+           <li> Handbook of sensor networks : algorithms and architectures, Ivan stojmenkovic, Wiley Publishers 2005.</li>
+          </ol>
+                                  </p>
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                    <td>SystÃ¨mes embarquÃ©s et applications en environnement mobile</td>
+                    <td>mÃ©thodologie</td>
+                         <td>3</td>
+                            <td>3</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m19');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m19">
+                                  <p>
+                                    Systemes embarques et applications en environnement mobile</p>
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>RÃ©seaux sans fil</td>
+                        <td>mÃ©thodologie</td>
+                         <td>3</td>
+                            <td>3</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m20');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m20">
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>Les rÃ©seaux sans fil prÃ©sentent de nombreux avantages sur les rÃ©seaux cÃ¢blÃ©s classiques, en termes de productivitÃ©, simplicitÃ© et coÃ»t. Les utilisateurs mobiles demanderont Ã©videmment des niveaux de qualitÃ©
+                                         de service identiques Ã  ceux offerts aux utilisateurs de postes fixes.</p>
+                                    <h2>Contenu du module:</h2>
+                                    <ul>
+                                     <li>Le routage dans les rÃ©seaux mobiles Ad hoc</li> 
+                                     <li>Protocoles de routage proactifs</li> 
+                                     <li>Protocoles de routage rÃ©actifs</li> 
+                                     <li>Protocoles de routage hybrides</li> 
+                                    </ul>
+                                    <h2>References:</h2>
+                                    <ol>
+                                    <li>  RÃ©fÃ©rences Wireless and mobile network architecture, Yi-Bing Lin, Imrich Chlamtac, Wiley Computer Publishing, 2001.</li>
+                                  <li>  RÃ©seaux de mobiles et sans fil, Khaldoun El Agha, Guy Pujolle, Gillaume Vivier, Ey- rolles 2001.</li>
+                              <li>  Handbook of sensor networks : algorithms and architectures, Ivan stojmenkovic, Wiley Publishers 2005.</li>
+                                    </ol>
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>RÃ©seaux et Protocoles</td>
+                        <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m21');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m21">
+                                  <p>
+                                    reseaux et protocole 
+                                  </p>
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>SystÃ¨mes dâ€™exploitation distribuÃ©s</td>
+                        <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td ><a href="#S1"><button class="btn" type="button" onclick="toggle_text('m22');" > Afficher </button></a> <!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m22">
+                                    <h2>Objectifs de l'enseignement:</h2>
+                                    <p>Cet enseignement permet Ã  l'Ã©tudiant d'apprÃ©hender les problÃ¨mes de conception de systÃ¨mes dâ€™exploitation distribuÃ©s</p>
+                                    <h2>Contenu du module:</h2>
+                                    <ul>
+                                     <li> DÃ©signation et localisation</li>
+                                  <li> MÃ©canismes de communication (RPC, communication de groupes, ...)</li>
+                              <li> Protocoles de diffusion</li>
+                          <li> MÃ©moire partagÃ©e rÃ©partie, rÃ©plication et cohÃ©rence</li>
+                          <li>SystÃ¨mes de gestion de fichiers rÃ©partis (nommage, transparence, serveurs, cache, duplication, consistance, NFS, CODAFS,....)</li>
+                                    </ul>
+                                    <h2>References:</h2>
+                                    <ol>
+                                    <li>  A. Tananbaun, Â« SystÃ¨mes dâ€™exploitation Â», 2Â°Ã©dition, Pearson Edition.</li>
+                                  <li> R. Balter, J-P. BanÃ¢tre, S. Krakowiak, Â« Construction des systÃ¨mes dâ€™exploitation RÃ©partis Â», Editeur INRIA 1991.</li>
+                                    </ol>
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>Vision artificielle</td>
+                        <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td ><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m23');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m23">
+                                <h2>Objectifs de l'enseignement:</h2>
+                                <p>Donner Ã  l'Ã©tudiant les fondements de base de la discipline vision artificielle.</p>
+                                <h2>Contenu du module:</h2>
+                                <ul>
+                                 <li> Chapitre1: Introduction Ã  la Vision par Ordinateur</li>
+                              <li>Chapitre 2 : Notion dâ€™un systÃ¨me informatique de vision</li>
+                              <li>  Chapitre 3: Techniques de base de traitement de l'image</li>
+                              <li>Chapitre 4: MÃ©thodes de Description de formes et d'images</li>
+                              <li>Chapitre 5: Reconstruction tridimensionnelle d'une scÃ¨ne</li>
+                              <li> Chapitre 6 : Indexation et Recherche dâ€™images</li>
+                                </ul>
+                                <h2 >References:</h2>
+                                <ol>
+                                 <li> Duda and Hart : Pattren classification and scene analysis, 1973</li>
+                              <li> Ballard and Brown : Computer Vision , 1982</li>
+                          <li> B.K.P. Horn : Robot Vision 1986</li>
+                                </ol>  
+                                 
+                              </div>
+                          </td>
+                    </tr>
+                    <!--ligne du tableau 3 qui contient 4 colonnes et une 5 eme pour un boutton ainsi que des titres h2 et des liste ul et ol-->
+                    <tr>
+                        <td>Technique dâ€™expression </td>
+                        <td>mÃ©thodologie</td>
+                         <td>4</td>
+                            <td>4</td>
+                            <td ><a href="#S1"> <button class="btn" type="button" onclick="toggle_text('m24');" > Afficher </button></a><!-- onclick permet d'afficher le contenu d'un module en un click sur le boutton afficher et ce grace a la foction JS---->
+                              <div id="m24">          
+          <h2>Objectifs de l'enseignement:</h2>
+          <p class="alinea">Le but de cet enseignement est d'apprendre aux Ã©tudiants la communication orale et Ã©crite, en milieu universitaire scientifique et aussi en milieu social hors de lâ€™universitÃ©, 
+              notamment lors de la recherche d'un premier travail et en entreprise, aprÃ¨s le recrutement.</p>
+          <h2>Contenu du module:</h2>
+        <ul>
+           <li>Langue : anglais</li> 
+        <li> Outils de communication scientifique Ã©crite (Latex, Word, etc.)</li> 
+    <li> Techniques de communication Ã©crite</li> 
+<li> Techniques de communication orale</li> 
+        </ul>
+                              </div>
+                          </td>
+                    </tr>
+                </table>
+  
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <!-- un div et des les liens a pour faire la navigation des tableaux-->
+<div class="slider-nav">
+    <a href="#S1">S1</a>
+    <a href="#S2">S2</a>
+    <a href="#S3">S3</a>
+    
+  </div>
+  <!-- un div contenant un titre H3 et un paragraphe descripteur du semestre 4-->
+<div id="S4"><h4>Semestre 4</h4>
+  <p class="alinea">Le semestre S4 est rÃ©servÃ© Ã  un stage ou Ã  un travail dâ€™initiation Ã  la recherche, sanctionnÃ©s par un mÃ©moire et une soutenance Le Projet est sur 30 crÃ©dits</p></div> <br>
+        <h3>Bibliographie:</h3>
+        <ul>
+        <li>AcervoLima/importance-des-reseaux-informatiques/.</li>
+        <li>web/CNES-fr/484-comment-a-marche-les-telecommunications</li></ul><br>
+        
+ </section>
+<!------ le footer ---------->
+    <footer class="footer-bas" id="contacts">
+
+        <div class="footer-gauche"> <!------  l'ecriture a gauche dans le footer ---------->
+
+            <h3>Master<span>Study</span></h3>
+
+            <p class="footer-liens">
+                <a href="index.html" class="link-1">HOME</a>
+                <a href="index.html">FONCTIONNEMENT</a>
+                <a href="index.html">Ã  PROPOS</a>
+                <a href="index.html">CHOIX</a>
+                <a href="#">CONTACT</a>
+            </p>
+
+            <p class="footer-name">MasterStudy Copyright Â© 2022 BOUADI Nassima SADI OUFELLA Ouiza ðŸ“– </p>
+        </div>
+
+        <div class="footer-centre"><!------  l'ecriture a centre dans le footer ---------->
+            <span class="contact"> Contactez Nous <br>
+            <br>
+            </span>
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>BP 32 Bab Ezzouar, 16111 - ALGER.</span> Houari boumdienne, ALGER</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p> +213 023934031</p>
+            </div>
+
+            <div>
+                <i class="fa fa fa-envelope"></i>
+                <p><a href="contact@usthb.dz">contact@usthb.dz</a></p>
+            </div>
+
+        </div>
+        <div class="footer-droit"><!------  l'ecriture a droite dans le footer ---------->
+
+            <p class="footer-about">
+                <span>NOTRE BUT</span><br>
+                Vous Ãªtes sur la bonne adresse si vous hÃ¨sitez sur le choix de votre formation. MasterStudy est Ã  votre service pour vous fournir les informations nÃ¨cessaire sur toutes formations disponibles.
+            </p>
+
+            <div class="footer-icons">
+
+                <span class="col-lg-3 item social"><a href="https://www.facebook.com/groups/999017747488761"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/?lang=fr"><i class="icon ion-social-twitter"></i></a><a href="https://accounts.snapchat.com/accounts/login?continue=%2Faccounts%2Fwelcome"><i class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com/faculte_d_informatique/?hl=fr"><i class="icon ion-social-instagram"></i></a> <!-- les icones ramener du site font awesome ,chaque icone a un chemin de destination -->
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>
